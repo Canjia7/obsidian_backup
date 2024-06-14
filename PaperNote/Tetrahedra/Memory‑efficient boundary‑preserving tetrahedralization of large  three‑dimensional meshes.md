@@ -9,3 +9,5 @@
 
 # Abstract
 提出了一种分治算法，对3D mesh进行boundary-preserving方式的四面体化。
+
+# Introduction
