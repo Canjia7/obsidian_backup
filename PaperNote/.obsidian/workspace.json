@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "8a0e7c2a81368eff",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e4712c46c4a9727",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5159a924f8b46b65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "63ef4cf9e598ad6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de43af2b555dfff6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1d7721a71e84cd80",
+    "type": "split",
+    "children": [
+      {
+        "id": "89b503ab16e17109",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7997b6435b2501ba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ebeeefbc5ecd45b2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cd6c56c503a1cf3b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4d3fd6fd70a08131",
+    "type": "split",
+    "children": [
+      {
+        "id": "5aa6dac7a66cfc1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b44ded4eae531fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5f37c2a669949937",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "41973f9c6cd964a5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8062eb2308264864",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "5159a924f8b46b65",
+  "lastOpenFiles": [
+    "未命名",
+    "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
+    "2024-06-14.md",
+    "create a link.md",
+    "Welcome.md",
+    "Tetrahedra",
+    "未命名.canvas",
+    "未命名 1.canvas"
+  ]
+}
