@@ -12,11 +12,9 @@
             "id": "1a5b99e005a7976b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
-                "mode": "source",
-                "source": false
+                "file": "Pic/Pasted image 20240614204859.png"
               }
             }
           }
@@ -106,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
+                "file": "Pic/Pasted image 20240614204859.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
+                "file": "Pic/Pasted image 20240614204859.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md"
+                "file": "Pic/Pasted image 20240614204859.png"
               }
             }
           }
@@ -167,14 +165,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1a5b99e005a7976b",
+  "active": "7997b6435b2501ba",
   "lastOpenFiles": [
-    "Pasted image 20240614212731.png",
-    "Tetrahedra/On tetrahedralisations of generalised Chazelle polyhedra with interior Steiner points.md",
     "Tetrahedra/Tetrahedral meshing in the wild.md",
     "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
-    "Pasted image 20240614204859.png",
-    "Pasted image 20240614205334.png",
+    "Pic/Pasted image 20240614212731.png",
+    "Tetrahedra/On tetrahedralisations of generalised Chazelle polyhedra with interior Steiner points.md",
+    "Pic/Pasted image 20240614204859.png",
+    "Pic/Pasted image 20240614205334.png",
     "Pic/Pasted image 20240614203150.png",
     "Pic/Pasted image 20240614201239.png",
     "Pic/Pasted image 20240614192705.png",
