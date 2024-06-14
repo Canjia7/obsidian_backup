@@ -6,25 +6,37 @@
       {
         "id": "1e4712c46c4a9727",
         "type": "tabs",
+        "dimension": 44.98546511627907,
         "children": [
           {
             "id": "5159a924f8b46b65",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pic/Pasted image 20240614201239.png"
+              }
+            }
+          },
+          {
+            "id": "1a5b99e005a7976b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
                 "mode": "source",
-                "backlinks": true,
-                "source": true
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "63ef4cf9e598ad6f",
         "type": "tabs",
+        "dimension": 55.014534883720934,
         "children": [
           {
             "id": "de43af2b555dfff6",
@@ -89,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 236.5
   },
   "right": {
     "id": "4d3fd6fd70a08131",
@@ -135,7 +147,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -154,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,10 +178,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "5159a924f8b46b65",
+  "active": "1a5b99e005a7976b",
   "lastOpenFiles": [
-    "未命名",
+    "Pic/Pasted image 20240614203150.png",
+    "Pic/Pasted image 20240614201239.png",
     "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
+    "Pic/Pasted image 20240614192705.png",
+    "Pic/Pasted image 20240614194909.png",
+    "Pic",
     "2024-06-14.md",
     "create a link.md",
     "Welcome.md",
