@@ -4,7 +4,7 @@ tags:
   - boundary_conformity
   - constrained_Delaunay_tetrahedralization
   - tetrahedralization
-  - numeric_robustness
+  - exact_computational
 ---
 ![[Pasted image 20240615111146.png]]
 > @article{10.1145/3618352,
