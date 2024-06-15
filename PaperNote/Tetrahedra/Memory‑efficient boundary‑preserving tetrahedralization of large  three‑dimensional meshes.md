@@ -1,3 +1,10 @@
+---
+tags:
+  - tetrahedralization
+  - parallelization
+  - mesh_generation
+  - boundary_conformity
+---
 ![[Pasted image 20240614192705.png]]
 > @article{erkocc2023memory,
   title={Memory-efficient boundary-preserving tetrahedralization of large three-dimensional meshes},
@@ -7,7 +14,6 @@
   year={2023},
   publisher={Springer}
   }
-  
 # 0 Abstract
 提出了一种分治算法，对3D mesh进行boundary-preserving方式的四面体化
 包含三个阶段：1、input partitioning，2、surface closure，3、merge

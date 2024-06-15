@@ -4,38 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1e4712c46c4a9727",
+        "id": "25a4aa65ea85ce25",
         "type": "tabs",
-        "dimension": 54.94186046511628,
         "children": [
           {
-            "id": "1a5b99e005a7976b",
+            "id": "f3586a5f52067511",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Pic/Pasted image 20240614204859.png"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "63ef4cf9e598ad6f",
-        "type": "tabs",
-        "dimension": 45.05813953488372,
-        "children": [
-          {
-            "id": "de43af2b555dfff6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -104,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pic/Pasted image 20240614204859.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pic/Pasted image 20240614204859.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Pic/Pasted image 20240614204859.png"
-              }
+              "state": {}
             }
           }
         ],
@@ -167,16 +140,22 @@
   },
   "active": "7997b6435b2501ba",
   "lastOpenFiles": [
-    "Tetrahedra/Tetrahedral meshing in the wild.md",
+    "Tetrahedra/Constrained Delaunay Tetrahedrization：A Robust and Practical Approach.md",
+    "Tetrahedra/Meshing Piecewise Linear Complexes by Constrained Delaunay Tetrahedralizations.md",
+    "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
     "Tetrahedra/Memory‑efficient boundary‑preserving tetrahedralization of large  three‑dimensional meshes.md",
-    "Pic/Pasted image 20240614212731.png",
+    "Pic/Pasted image 20240615111146.png",
+    "Pic/Pasted image 20240615101047.png",
+    "Pic/Pasted image 20240615105141.png",
+    "Pic/Pasted image 20240615104949.png",
+    "Pic/Pasted image 20240615104442.png",
+    "Pic/Pasted image 20240615103755.png",
+    "Pic/Pasted image 20240615103425.png",
+    "Pic/Pasted image 20240615103206.png",
+    "Pic/Pasted image 20240615103026.png",
+    "Pic/Pasted image 20240615102720.png",
     "Tetrahedra/On tetrahedralisations of generalised Chazelle polyhedra with interior Steiner points.md",
-    "Pic/Pasted image 20240614204859.png",
-    "Pic/Pasted image 20240614205334.png",
-    "Pic/Pasted image 20240614203150.png",
-    "Pic/Pasted image 20240614201239.png",
-    "Pic/Pasted image 20240614192705.png",
-    "Pic/Pasted image 20240614194909.png",
+    "Tetrahedra/Tetrahedral meshing in the wild.md",
     "Pic",
     "2024-06-14.md",
     "create a link.md",
