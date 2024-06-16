@@ -11,11 +11,9 @@
             "id": "e9179077b0b3dda8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
-                "mode": "source",
-                "source": false
+                "file": "Pic/Pasted image 20240616160039.png"
               }
             }
           },
@@ -97,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
+                "file": "Pic/Pasted image 20240616160039.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
+                "file": "Pic/Pasted image 20240616160039.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md"
+                "file": "Pic/Pasted image 20240616160039.png"
               }
             }
           }
@@ -158,18 +156,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e9179077b0b3dda8",
+  "active": "7997b6435b2501ba",
   "lastOpenFiles": [
-    "Pasted image 20240616214043.png",
-    "Tetrahedra/Tetrahedral Meshing in the Wild.md",
     "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
+    "Pic/Pasted image 20240616214043.png",
+    "Tetrahedra/Tetrahedral Meshing in the Wild.md",
     "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
     "Tetrahedra/Constrained Delaunay Tetrahedrization：A Robust and Practical Approach.md",
     "Tetrahedra/Meshing Piecewise Linear Complexes by Constrained Delaunay Tetrahedralizations.md",
     "Tetrahedra/Memory‑efficient Boundary‑preserving Tetrahedralization of Large  Three‑dimensional Meshes.md",
     "Tetrahedra/On Tetrahedralisations of Generalised Chazelle Polyhedra with Interior Steiner Points.md",
     "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
-    "Pasted image 20240616160039.png",
+    "Pic/Pasted image 20240616160039.png",
     "Pic/Pasted image 20240616151105.png",
     "Pic/Pasted image 20240616153437.png",
     "Pic/Pasted image 20240616152554.png",
@@ -181,7 +179,6 @@
     "Pic/Pasted image 20240615204446.png",
     "Pic/Pasted image 20240615203819.png",
     "Pic/Pasted image 20240615203816.png",
-    "Pic/Pasted image 20240615202354.png",
     "Tetrahedra/Tetrahedral Meshing in the Wild 1.md",
     "Pic",
     "2024-06-14.md",
