@@ -2,8 +2,8 @@
 tags:
   - tetrahedralization
   - parallelization
-  - mesh_generation
   - boundary_conformity
+  - volumetric_mesh_generation
 ---
 ![[Pasted image 20240614192705.png]]
 > @article{erkocc2023memory,

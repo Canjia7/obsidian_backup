@@ -1,5 +1,9 @@
 ---
 tags:
+  - tetrahedralization
+  - volumetric_mesh_generation
+  - robust_geometry_processing
+  - boundary_conformity
 ---
 ![[Pasted image 20240615150359.png]]
 > @article{10.1145/3197517.3201353,
@@ -63,8 +67,31 @@ resulting mesh的质量是target mesh size和allowed tolerance的一个direct fu
 
 我们的方法虽然较慢，但当应用于在wild发现的meshes时，在许多质量度量上，我们的方法在robust和结果质量上有了显著的提高
 # 2 Related Work
+tetrahedral mesh generation一直是计算几何学者和图形学、物理学、工程学的一个长期难题
+我们特别感兴趣的是constrained地输出一个3D tetrahedral mesh，其2D surface closely匹配于input surface
+
+我们根据所采用了高级方法对相关工作进行分类
+...
 ### Background Grids
 ### Delaunay
+一组points的tetrahedralizing问题已经被很好地研究【】
+
+当input包含surface mesh constrains时，挑战在于以一种有意义的方式扩展Delaunay mesh的概念
+在2D下，constrained Delaunay方法提供了令人满意的解
+与2D相比，3D中的情况立即变得复杂，因为存在多面体，如果不添加额外的内部Steiner point，就无法实现四面体化（Schonhardt四面体）
+
+...
+然而如果必须preserve boundary facets，则robustness问题立即出现
+
+更重要的是，即使当方法保证生成一个有着有限radius-to-edge ratio的mesh，它不像2D情况
+臭名昭著的sliver tetrahedra满足radius-to-edge ratio标准
+因此不可避免地，Delaunay refinement之后需要各种网格改进启发式：...
+我们的方法还依赖于variational-type mesh improvement（Section 3.2）
+
+==conforming Delaunay tetrahedralization==通过插入额外的Steiner point来分割input boundary，直到所有的input faces都作为element faces的superset出现
+即使在input上有额外的假设，这个过程也可能需要许多不切实际的additional point和tetrahedra
+相比之下，==constrained Delaunay tetrahedralization==【】提出放宽对boundary faces的Delaunay需求（<font color=red>即四面体不包含其它“可见的”顶点</font>），从而减少所谓的Steiner point
+流形的开源软件TetGen基于constrained Delaunay tetrahedralization，强制在mesh中包含input faces
 ###  Restricted Delaunay tetrahedralization
 ###  Variational meshing
 ###  Surface Envelope
@@ -115,6 +142,8 @@ real-world meshes进程受到各种defects的困扰，包括degenerate elements�
 我们建立了一个精确的BSP细分，使用infinite-precision有理坐标，并且只依赖于在此表示下的closed操作
 pipeline的2D示意图见Figure 2：
 ![[Pasted image 20240615193933.png]]
+> 原始input segment（left）的点使用Delaunay triangulation（second left）。每个line segment被所有与其相交的triangles分割，构建BSP-tree（third left）。每个生成的convex polygons（蓝色）通过在其重心处添加一个点，并将其连接到polygon的顶点（third right）。使用local操作来提高质量（second right），最后利用winding number来过滤出domain外的elements（right）
+
 与surface-conforming Delaunay tetrahedralization相反，其对于设计一个robust的实现是很有挑战的，不受约束的版本可以用精确有理数robust地实现
 因此，我们创建了一个初始的、不一致的tetrahedral mesh $M$，其顶点和输入的triangle soup相同，使用CGAL中的精确有理内核
 
@@ -124,7 +153,7 @@ pipeline的2D示意图见Figure 2：
 换言之，我们将每个tetrahedron作为一个BSP cell的root，并使用input几何中所有的与之相交的triangles来切割cell
 这个计算可以完全使用有理坐标来完成，因为planes之间的交点在有理数下是closed的，即使对于degenerate input也能确保robustness和correctness
 
-利用cell的convexity将polyhedral mesh转换为tetrahedral mesh：
+利用cell的convexity（<font color=red>PS：四面体用一系列plane切割后是凸的</font>）将polyhedral mesh转换为tetrahedral mesh：
 	我们将它的faces进行triangulate，在重心处添加一个顶点，并将其连接到在boundary的所有triangular faces
 由于唯一需要的操作是顶点位置的平均值，因此可以用有理数精确地计算重心
 只要至少有四个输入顶点是线性无关的，那么所有的convex cell都是non-degenerate
@@ -183,12 +212,49 @@ input中的self-intersections可以自然地处理：
 	之前阶段构建了一个approximately constrained tetrahedralization，可能有一个nonmanifold、disconnected、open embedded surface
 我们使用[[Robust Inside-outside Segmentation Using Generalized Winding Numbers]]中提出的方法来解决embedded surface可能存在的缺陷
 	方法是定义一个inside-outside函数，该函数可以用于提取与mesh相关的interior volume
-...
+我们计算了每个tetrahedron的质心相对于embedded surface的winding number
+	如果小于0.5，则考虑其在surface外，并在导出mesh之前将其丢弃
+注意，此项技术仅在mesh optimization后应用
+	是因为数值原因：winding number的计算不能以有理数进行，并且由于使用三角函数，在接近surface处（我们最关心的地方）它在数值上是不稳定的
+
+由于这一步骤，small gaps和large surface holes都会根据induced winding number field被填充（Figure 8 and 11）
+因此，如果input mesh有holes，我们的算法会生成一个tetrahedral mesh，其surface并不完全在$\epsilon$ envelop内，因为用于填充hole的triangles可能在外部
+![[Pasted image 20240616151105.png]]
 ## 3.4 Technical Detail
 ### Hybrid Kernel
+仅用精确的有理数来存储顶点的位置来实现mesh optimization是不切实际的，原因有两个：
+1. 每次修改顶点时，有理数表示的大小都会增长（特别是smooth中，计算时间会急剧增加）
+2. 有理数操作不支持硬件，并且比浮点数慢很多
+
+我们使用hybrid geometric kernel
+对于每个顶点，只有当任何一个tetrahedra在将其顶点四舍五入为floating point后invert时，我们才将其坐标存储为精确的有理数
+
+注意，这并不影响算法的正确性，因为包含almost degenerate elements的有问题的区域将继续使用精确的有理表示
 ### Voxel Stuffing
+虽然保证对任何输入生成有效网格，但Section 3.1zhon 描述的算法可能生成poor-shaped initial cell，其size和用户规定的不同，需要在mesh improvement步骤中大量清理
+
+为了减少运行时间，我们发现在input triangle soup的bounding box内的regular lattice中预先添加一些proxy point是有益的
+为了避免尝试degenerate cell，我们从surface移除$\delta$内的proxy point
+这些点被passed到Delaunay tetrahedralization算法（Figure 9），产生一个更好的starting point，使得需要更少的local操作来达到usable quality
+![[Pasted image 20240616152143.png]]
+除了减少optimization阶段的时间外，该步骤还将BSP构建定位在input surface周围
+
+实验发现，设置grid edge length为$b/20$获得最高的好处，$b$为bounding box的对角线长度
 ### Input Simplification
+BSP-tree的构建可能会引入相对于face数量的平方数量的相交数
+	这只发生在罕见的病态例子中，对于大多数现实世界的模型来说，这并不是一个问题，但我们确实在Thingi10K中发现了两个超过10000的问题（Figure 10）
+![[Pasted image 20240616152554.png]]
+我们提出了一个preprocessing步骤，在不改变算法的上限复杂性的同时，在我们测试它的所有网格上解决了这个问题，preprocessing试图：
+1. collapse所有input triangle soup的manifold edge，接受不使得surface移动到envelop外部的操作
+2. 提高网格的质量（在角度方面），通过flipping edge，仍然保持surface在envelop内
+
+我们对所有的结果都使用了这个过程，因为它也提高了非病理mesh的性能
 ### Open Boundaries
+如果surface包含open boundaries，仅使用surface envelop并不总是足以确保对input triangle soup的good approximation
+	虽然不太可能发生，但boundary可以在其内部自由移动，可能会远离open boundary，同时保持在envelop内
+我们解决了这个问题，跟踪open boundary，并在smoothing步骤中将其顶点重新reprojecting（Figure 11）
+![[Pasted image 20240616153437.png]]
+如果一条edge上只有一个三角形，我们就认为它是open boundary
 ### Envelope
 # 4 Results
 ### Robustness and Performance
@@ -200,3 +266,15 @@ input中的self-intersections可以自然地处理：
 ### Noise Stress-Test
 ### Meshing for Mulimaterial Solids
 # 5 Limitations and Concluding Remarks
+我们的算法处理sharp features以一种soft方式：
+	它们出现在output中，但它们的顶点可能会displaced，导致一条直线在envelop内曲折
+虽然这对于大多数图形应用程序来说是可以接受的，但扩展我们的算法以支持精确保存尖锐特征是我们计划追求的一个有趣的研究方向
+
+我们证明了我们的算法可以用作网格修复工具，但它仅限于closed surface：
+	将其扩展到支持mesh repair over shells是一个有趣且有挑战性的工作
+
+我们的单线程实现慢于大多数竞争方法：
+	由于我们的算法的大多数步骤都是本地的，因此我们认为可以通过开发我们的方法的并行（可能是分布式的）版本来实现性能提升
+
+最后，我们提出了一种从triangle soup计算approximately constrained tetrahedralization的算法
+该算法可以robustly处理数千个模型，无需参数调整或人工交互，为几何数据的black-box打开了大门

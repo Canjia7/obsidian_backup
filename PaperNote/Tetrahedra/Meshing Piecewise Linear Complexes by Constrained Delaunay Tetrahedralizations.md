@@ -2,8 +2,8 @@
 tags:
   - boundary_conformity
   - constrained_Delaunay_tetrahedralization
-  - mesh_generation
   - tetrahedralization
+  - volumetric_mesh_generation
 ---
 >@inproceedings{si2005meshing,
   title={Meshing piecewise linear complexes by constrained Delaunay tetrahedralizations},

@@ -1,10 +1,11 @@
 ---
 tags:
-  - mesh_generation
   - boundary_conformity
   - constrained_Delaunay_tetrahedralization
   - tetrahedralization
   - exact_computational
+  - robust_geometry_processing
+  - volumetric_mesh_generation
 ---
 ![[Pasted image 20240615111146.png]]
 > @article{10.1145/3618352,
