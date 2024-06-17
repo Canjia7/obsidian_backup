@@ -97,13 +97,91 @@ output tetrahedral mesh可以选择性地post-processed来去除input surface外
 这种启发式的filtering可能会失败
 	例如，如果input是远离于一个closed surface（eg. 半球体），fTedWild将生成一个valid tetrahedral mesh，其face符合input，但filtering阶段可能会丢弃所有tetrahedra，因为“outside” region不是well defined的
 ### Similarities and Defferences to Existing Face Insertion Algorithms
+现有的tetraheral meshing算法面临的主要挑战是：对input faces的保持（精确或近似）
+
+最著名的算法是[[‘Ultimate’ robustness in meshing an arbitrary polyhedron]]，该算法通过与input faces相交来细分background mesh
+	然而，这个过程可能由于floating-point舍入而引入inverted elements
+	这是一项困难的任务，目前还没有robust的算法
+TetWild（[[Tetrahedral Meshing in the Wild]]）提出了一个robust的解决方案，该解决方案最初使用有理数精确插入faces来避免数值问题，但随后强制允许它们移动，来将有理坐标舍入到floating point
+	尽管该解决方案robust且conservative，但它依赖于昂贵的有理结构，并且不能保证在舍入阶段成功
+
+我们的方法遵循TetWild类似的方法，允许从input surface参数small且controlled的偏差，但避免了构建rational mesh的必要，同时继承了TetWild的robust
+算法上，有三个主要的区别：
+1. fTetWild通过在现有的background tetrahedral mesh中每次插入一个input triangle来preserve the input faces。为了方便插入，它通过一个snapping tolerance（相对于floating point machine precision，仅与$\epsilon$-envelope有关）来放松插入
+2. fTedWild总是通过查找pre-computed table来tetrahedralizes受到新插入face影响的区域，并始终保持一个valid inversion-free tetrahedral mesh（使用exact predicates）
+3. fTedWild仅使用floating point来表示顶点，从而减少了运行时间和内存消耗
+
+我们注意到，由于floating-point表示的限制，插入triangle可能会失败
+	例如，插入的face可以任意靠近现有的一个顶点，插入将引入一个体积为零的tetrahedron
+在这种情况下，我们rollback有问题的操作，将有问题的faces标记为un-inserted，迭代地对整个mesh执行mesh improvement操作，当mesh质量增加时，尝试再次插入该face
+==这个过程显示了fTetWild唯一可能的失败：添加一些input faces的不可能==
+虽然这确实是可能的，但它从未在我们的实验中得到证实
+注意，即使某些face不能插入，fTetWild仍然输出一个符合所有其它faces的valid mesh
 ## 3.1 Algorithm Overview
+我们的算法由四个phase组成（Figure 3）：
+1. 简化了input triangle soup，同时确保它保持在input的$\epsilon$-envelope中（Section 3.3）
+2. 生成一个background mesh，迭代地插入triangles，如果插入没有引入inverted elements（Section 3.4）
+3. 使用局部操作来改进mesh（Secion 3.5），并在每三次改进迭代结束时，我们re-attempt在phase 2中无法插入的三角形
+4. 可选地filter mesh elements以去除surface外的element，或执行boolean操作（Section 3.6）
+![[Pasted image 20240617152158.png]]
+在整个过程中，我们确保tetrahedral mesh保持valid，也即我们确保：
+1. 每个element都有positive volume（使用exact predicates）进行检查
+2. 所有成功插入的triangles，从现在起称为tracked surface，留在input的$\epsilon$-envelope内
+
+在整个算法中，如果两点之间的距离低于一个数值tolerance $\epsilon_{zero}$，我们将其视为0
+类似的，我们用$\epsilon_{zero}^2$和$\epsilon_{zero}^3$于面积和体积
+我们发现，算法的性能不会受到这个tolerance的影响，只要$\epsilon_{zero}>10^{-20}$
+	实验中，设置$\epsilon_{zero}>10^{-8}$
 ## 3.2 Envelope
+我们使用envelope定义和[[Tetrahedral Meshing in the Wild]]中介绍的算法来构建envelope，并检查其内部是否包含triangles
+特别是，检测一个triangle是否包含在envelope内，是通过对input triangle进行采样并检查samples是否都在较小的envelope（with the sampling error conservatively compensated）内进行
 ## 3.3 Preprocessing
+我们使用与[[Tetrahedral Meshing in the Wild]]相同的preprocessing过程来简化input
+我们merge顶点近于$\epsilon_{zero}$并collapse一条边（通过merge一个端点到另一个），如果：
+1. 它是一个manifold edge（不超过两个incident triangles），并且vertex-adjacent edges也是manifold的
+2. collapsing操作不会移动triangles到一个smaller envelope（尺寸$\epsilon_{prep}<\epsilon$）的外部
+这个阶段选择$\epsilon_{prep}=0.8\epsilon$，这个值为triangle insertion（Section 3.4）的snapping提供了空间，并防止顶点过于靠近envelope的boundary，从而为surface vertives在mesh improvement（Section 3.5）中移动留下了更多的自由
+数据集中，我们观察到，在0.7-0.999的范围内，改变这个参数对运行时间的影响很小，对output的影响可以忽略不记
+注意，它不可以选择为1，因为它会防止snapping（Section 3.4）
+
+由于envelope包含检测，preprocessing在计算上是昂贵的，因此我们提出一种基本的parallelization策略，使用8核时可以加速preprocessing 4倍
+我们的parallel edge collapsing过程使用一个在所有input mesh上连续的2-coloring pass
+	初始阶段将所有input triangles标记为白色
+	然后迭代地将所有edge标记为parallel-independent，如果所有其vertex-adjacent triangles都是白色的。然后将这些triangles标记为黑色（Figure 4）
+此时，我们可以安全地平行地collapse所有标记的parallel-independent edge
+我们迭代这个过程，直到我们无法删除超过0.01%的原始input顶点
+![[Pasted image 20240617154914.png]]
 ## 3.4 Incremental Triangle Insertion
 ### 3.4.1 Background Mesh Generation
+triangle insertion阶段需要一个background mesh（不一定conform于input triangles），我们在preprocessing阶段的顶点上使用Delaunay tetrahedralization（Geogram）来创建background mesh
+
+因为我们允许surface在一个$\epsilon$-envelope内移动，所以我们为一个比input顶点的bounding box大$2\epsilon$的bounding box生成background mesh
+与TetWild类似，在Delaunay tetrahedralization之前，在box内均匀地添加additional points，并且至少远离input faces $\epsilon$，以获得更均匀形状的初始elements
 ### 3.4.2 Single Triangle Insertion
+算法的关键部分是three-stage过程
+	将一个triangle $T$插入到一个valid tetrahedral mesh $M$
+	添加新顶点和tetrahedra
+	调整mesh connectivity
+以尽可能减少插入的失败 和 插入产生的badly shaped tetrahedra
+
+注意，我们不插入degenerate triangles
+我们的算法使用marching tetrahedra【】和其它tetrahedralization methods的思想，以及marching cubes
+它包含以下步骤：
+1. 寻找triangle $T$ cut的tetrahedra $M$组成的集合$\mathcal{T}_I$，定义见下
+2. 计算由$T$ span成的plane 和 $\mathcal{T}_I$的tetrahedra的edges的交点，记为$P$
+3. 使用pre-computing的tet-subdivision table中的connectivity pattern细分所有的cut tetrahedra，这些pattern保证了valid的tetrahedral mesh connectivity是manifold的
 #### Finding Cut Tetrahedra
+我们首先定义object $A$ ==cuts though== object $B$，如果它们的intersection同时包含$A$和$B$的interior points
+我们称triangle $T$ ==cuts== tetrahedron $\mathcal{T}$，如果：
+1. 它完全包含在$\mathcal{T}$中，或
+2. 它至少穿过$\mathcal{T}$的一个face（Figure 6）
+![[Pasted image 20240617172633.png]]
+我们初始化$\mathcal{T}_I$为$T$ cuts的$M$中的tetrahedra的集合
+注意，这个集合会被算法迭代地expanded
+
+我们用exact predicates来检查三角形是否包含在tetrahedron中
+为了检测一个triangle是否穿过另一个，我们将exact predicates和算法结合起来【】
+predicates的使用确保了使用floating-point坐标时拓扑的正确性
 #### Plane-Tetrahedra Intersection
 #### Table-based Tetrahedron Subdivision
 ### 3.4.3 Open-boundary Edge Preservation

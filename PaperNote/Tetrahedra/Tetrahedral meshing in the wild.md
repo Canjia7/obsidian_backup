@@ -120,7 +120,7 @@ resulting tetrahedralization可以用于各种目的
 因此我们的算法保证产生valid mesh（阶段1），但我们不能对其质量提供正式的约束（阶段2）
 在实践中，我们的prototype在数据集中10000个wild模型获得的质量很高（Section 4）
 ### Overview
-该算法创建了一个volumetric Binary Space Partitioning（BSP）tree，每个input triangles包含一个plane，并将其坐标存储为精确的有理数
+该算法创建了一个volumetric Binary Space Partitioning（BSP）tree，每个input triangles会使其包含一个plane，并将其坐标存储为精确的有理数
 
 通过构造，resulting convex（但不一定是严格的convex）cell分解符合input triangle soup，并且可以通过将每个cell独立地四面体化来轻松创建tetrahedral mesh
 volumetric mesh不仅在模型内部创建，而且在模型周围创建，填充一个比输入略大的bounding box
@@ -139,17 +139,17 @@ real-world meshes进程受到各种defects的困扰，包括degenerate elements�
 
 因此，我们建议按照原样的input geometry，并依靠robust几何构建来将整个volume填充为tetrahedra，而不需要在这个阶段承诺boundary的几何和拓扑，并将此挑战推迟到pipeline的后期阶段，在所有的degeneracies被消除后
 ### BSP-Tree Approach
-我们建立了一个精确的BSP细分，使用infinite-precision有理坐标，并且只依赖于在此表示下的closed操作
+我们建立了一个exact的BSP subdivision，使用infinite-precision有理坐标，并且只依赖于在此表示下的closed操作
 pipeline的2D示意图见Figure 2：
 ![[Pasted image 20240615193933.png]]
 > 原始input segment（left）的点使用Delaunay triangulation（second left）。每个line segment被所有与其相交的triangles分割，构建BSP-tree（third left）。每个生成的convex polygons（蓝色）通过在其重心处添加一个点，并将其连接到polygon的顶点（third right）。使用local操作来提高质量（second right），最后利用winding number来过滤出domain外的elements（right）
 
-与surface-conforming Delaunay tetrahedralization相反，其对于设计一个robust的实现是很有挑战的，不受约束的版本可以用精确有理数robust地实现
-因此，我们创建了一个初始的、不一致的tetrahedral mesh $M$，其顶点和输入的triangle soup相同，使用CGAL中的精确有理内核
+与surface-conforming Delaunay tetrahedralization（[[Tetgen - A Delaunay-Based Quality Tetrahedral Mesh Generator]]）相反，其对于设计一个robust的实现是很有挑战的，unconstrained的版本可以用exact有理数robust地实现
+因此，我们创建了一个初始的、non-conforming的tetrahedral mesh $\mathcal{M}$，其顶点和输入的triangle soup相同，使用CGAL中的精确有理内核
 
 生成的tetrahedral mesh不保持input surface，使其无法应用于大多数下游应用
 为了加强conformity，我们使用的方法受到了[[BSP-Assisted Constrained Tetrahedralization]]的启发，但设计于保证valid output
-我们将input triangle soup中的每个triangle视为一个plane，并将其与$M$中包含的所有tetrahedra相交
+我们将input triangle soup中的每个triangle视为一个plane，并将其与$\mathcal{M}$中包含的所有tetrahedra相交
 换言之，我们将每个tetrahedron作为一个BSP cell的root，并使用input几何中所有的与之相交的triangles来切割cell
 这个计算可以完全使用有理坐标来完成，因为planes之间的交点在有理数下是closed的，即使对于degenerate input也能确保robustness和correctness
 

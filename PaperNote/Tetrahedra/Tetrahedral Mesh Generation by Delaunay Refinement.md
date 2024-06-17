@@ -1,0 +1,15 @@
+> @inproceedings{10.1145/276884.276894,
+author = {Shewchuk, Jonathan Richard},
+title = {Tetrahedral mesh generation by Delaunay refinement},
+year = {1998},
+isbn = {0897919734},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/276884.276894},
+doi = {10.1145/276884.276894},
+booktitle = {Proceedings of the Fourteenth Annual Symposium on Computational Geometry},
+pages = {86–95},
+numpages = {10},
+location = {Minneapolis, Minnesota, USA},
+series = {SCG '98}
+}
