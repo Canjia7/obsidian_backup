@@ -20,7 +20,19 @@
             }
           },
           {
-            "id": "f068c60e8dc424fb",
+            "id": "58a35ece2be0d436",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tetrahedra/Harmonic triangulations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "346a9a56faad09b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,19 +42,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8fed88d2a645da38",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pic/Pasted image 20240617152158.png"
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 488.5
   },
   "right": {
     "id": "4d3fd6fd70a08131",
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pic/Pasted image 20240617152158.png",
+                "file": "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pic/Pasted image 20240617152158.png",
+                "file": "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pic/Pasted image 20240617152158.png"
+                "file": "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md"
               }
             }
           }
@@ -157,7 +158,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 279.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,29 +170,31 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7997b6435b2501ba",
+  "active": "697c268beba9b802",
   "lastOpenFiles": [
-    "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
-    "Pic/Pasted image 20240617202856.png",
-    "Pic/Pasted image 20240617201008.png",
+    "Pasted image 20240618211809.png",
+    "Pasted image 20240618202616.png",
+    "Pasted image 20240618201737.png",
+    "Pasted image 20240618193448.png",
+    "Pasted image 20240618191926.png",
+    "Tetrahedra/‘Ultimate’ robustness in meshing an arbitrary polyhedron.md",
+    "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
+    "Tetrahedra/Harmonic triangulations.md",
     "Tetrahedra/Tetrahedral Meshing in the Wild.md",
+    "Pasted image 20240618164943.png",
+    "Pasted image 20240618163213.png",
+    "Pasted image 20240618162912.png",
+    "Pasted image 20240618161342.png",
+    "Pic/Pasted image 20240617212322.png",
+    "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
+    "Pic/Pasted image 20240618145337.png",
     "Tetrahedra/Tetrahedral Mesh Generation by Delaunay Refinement.md",
     "Tetrahedra/Tetgen - A Delaunay-Based Quality Tetrahedral Mesh Generator.md",
-    "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
     "Tetrahedra/On Tetrahedralisations of Generalised Chazelle Polyhedra with Interior Steiner Points.md",
     "Tetrahedra/Memory‑efficient Boundary‑preserving Tetrahedralization of Large  Three‑dimensional Meshes.md",
     "Tetrahedra/Meshing Piecewise Linear Complexes by Constrained Delaunay Tetrahedralizations.md",
     "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
-    "Tetrahedra/‘Ultimate’ robustness in meshing an arbitrary polyhedron.md",
     "Tetrahedra/Constrained Delaunay Tetrahedrization：A Robust and Practical Approach.md",
-    "Pic/Pasted image 20240617192757.png",
-    "Pic/Pasted image 20240617172633.png",
-    "Pic/Pasted image 20240617154914.png",
-    "Pic/Pasted image 20240617152158.png",
-    "Pic/Pasted image 20240616160039.png",
-    "Pic/Pasted image 20240616214043.png",
-    "Pic/Pasted image 20240616151105.png",
-    "Pic/Pasted image 20240616153437.png",
     "README.md",
     "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
     "Others",

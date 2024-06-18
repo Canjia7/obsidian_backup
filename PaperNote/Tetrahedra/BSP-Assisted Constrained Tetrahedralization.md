@@ -125,3 +125,86 @@ BSP tree的convex decomposition算法所识别的的subpolyhedra的implicit顶�
 这个分裂过程在被tetrahedralized的boundary上引入了新的点
 这些BSP点有助于确保执行完整的tetrahedralization
 然而，目前尚不清楚BSP点和Steiner point之间是否存在关系
+## 2.3 Tetrahedralization of subpolyhedra
+一旦确定了一个convex subpolyhedron，就可以确定其内部的点的list
+	本文中将恰好位于subpolyhedron边界上的点归为subpolyhedra的内点
+这些点可以tetrahedralized，形成一个convex subpolyhedron的mesh
+采用randomized point insertion Delaunay tetrahedralization算法
+然而，不能保证这组点完全描述convex subpolyhedron的边界
+	当BSP tree的node与child node的plane相交，但不与child node本身相交时，通常会发生这种情况
+
+Figure 4（<font color=red>该Figure中A和B位置可能需要对调</font>）展示了不能完全描述的subpolyhedra的情况的2D示例
+Figure 4a中的polygon和一个可能的对应BSP tree（Figure 4b），可以分割成两个convex subpolyhedra $A$和$B$
+虽然child node 3的plane与parent node 1相交，其face本身并未与parent node相交
+这意味着对于convex subpolyhedra，在plane 1和3的交点没有顶点，因此subpolyhedra没有在subpolyhedra的每个corner上的顶点
+Figure 4c说明了subpolyhedra的triangulation不能recover整个polygon
+![[Pasted image 20240617212322.png]]
+如果不加以纠正，这个问题将导致在tetrahedralization中丢失tetrehedra
+为了recover这些missing tetrahedra，一个glue算法被设计于用来merge subpolyhedra到一起
+### 2.3.1 Pseudocode Implementation
+tetrahedralization算法通过遍历BSP tree来操作
+一个tuples的list表示遍历的node和所去的direction，识别convex subpolyhedra是必要的
+	例如：`(node_n,[front, behind])`
+一旦访问了一个node，它就会从list中被移除
+Algorithm 1描述了这种伪码实现
+![[Pasted image 20240617213252.png]]
+## 2.4 Gluing subpolyhedra
+当使用glue算法合并两个subpolyhedra时，它们被一个single splitting plane精确地分开，该plane是BSP tree当前位置的root node
+因此，该算法每次递归地合并两个growing subpolyhedra，直到tree中的所有subpolyhedra都被合并
+需要生成tetrahedra来填充merging subpolyhedra之间的空间
+
+生成subpolyhedra之间的tetrahedra的一种方法是：合并front和behind subsets的points，并在这个合并后的点集执行一个Delaunay tetrahedralization
+	然后可以使用简单的cross test来reject没有合并tetrahedralization的tetrahedra
+	这个合并的tetrahedra集之后添加到已经生成的front和behind的subpolyhedra的tetrahedra集合中
+
+对于一个通过cross test的tetrahedra，它必须满足三个标准
+1. 它的所有顶点必须不完全位于joining plane的上方或下方
+2. tetrahedra至少有一条edge必须与joining plane相交
+3. tetrahedra的任何edge不能与joining plane上的现有face相交
+
+一个2D的例子见Figure 5
+在此合并中，joining plane用虚线表示，且从edge $cf$生成
+使用cross test
+	triangle $\triangle cde$是合法的，因为其顶点都位于joining plane的上方和下方，一条边穿过joining plane，没有edge与$cf$相交
+	triangle $\triangle afb$是不合法的，因为其所有点都在joining plane上方
+	triangle $\triangle abg$是不合法的，因为其有edges穿过plane $cf$
+![[Pasted image 20240618143722.png]]
+不幸的是，上述算法并非适用于所有情况，有时无法完全将subpolyhedra之间的区域网格化
+为了解决这个问题，我们提出了一种受Bowyer-Watson随机点插入（RPI）算法启发的glue算法
+它的工作原理是：连接front subset的边界的triangles，to the points of the hull below that face those triangles
+
+...
+
+Figure 6显示了这种类型的点插入的2D示例
+外接圆包含point的triangles被删除，并与新point进行re-meshed（Figure 6a）
+一旦这是完成的，hull的edges被用来创建新triangles（与点如果完全在triangulation和外接圆外是一样的）（Figure 6b）
+使用gluing算法，如Figure 6c，如果没有删除tetrahedra，而是从hull的edges和exterior point创建triangles
+![[Pasted image 20240618145337.png]]
+## 2.5 Fixing Crossed Tetrahedra Edges
+# 3 Proof of Concept
+# 4 Discussion
+## 4.1 Theoretical Bounds
+## 4.2 BSP and Steiner Points
+## 4.3 Practical Considerations
+从相同的input mesh可以构造许多不同的BSP tree
+为了使生成的BSP tree更加一致，决定在BSP tree构建中选择root node的选择标准是必要的
+使用的度量是：如果选择了特定的root，其分裂的leaf node数
+实践中，当BSP root node的选择使分裂的leaf node数量最小化时，mesh往往具有更少的附加点和tetrahedra
+
+mesh generator不能保证任何生成的tetrahedra的质量
+然而，mesh generation过程不受到local geometrical feature的尺寸限制，因此是scale independent
+
+...
+## 4.4 Limitations
+该算法最薄弱的部分是gluing算法，需要进一步改进
+主要问题在于，生成的subpolyhedra之间的tetrahedra是non-Delaunay的，并且这些tetrahedra的可靠性质和属性尚未确定
+
+与此相关的问题是，在gluing过程中找到上述subpolyhedra中的面集，其面向下方subpolyhedra
+...
+# 5 Conclusion and Future Directions
+本文提出了一种covering tetrahedralization算法，为高质量的mesh generator提供了有效的初始化
+因此，这些tetrahedra可以在没有edge flips的情况下进行subdivided和refined，从而保证了input polyhedron boundary的拓扑结构
+
+主要的创新之处在于将BSP tree和Delaunay tetrahedralization结合在一起，以及一个不受local complexity限制的tetrahedral mesh generator
+
+根据实验，added points的数量一直很低

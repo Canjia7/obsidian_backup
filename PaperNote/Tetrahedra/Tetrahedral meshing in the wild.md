@@ -150,7 +150,7 @@ pipeline的2D示意图见Figure 2：
 生成的tetrahedral mesh不保持input surface，使其无法应用于大多数下游应用
 为了加强conformity，我们使用的方法受到了[[BSP-Assisted Constrained Tetrahedralization]]的启发，但设计于保证valid output
 我们将input triangle soup中的每个triangle视为一个plane，并将其与$\mathcal{M}$中包含的所有tetrahedra相交
-换言之，我们将每个tetrahedron作为一个BSP cell的root，并使用input几何中所有的与之相交的triangles来切割cell
+	换言之，我们将每个tetrahedron作为一个BSP cell的root，并使用input几何中所有的与之相交的triangles来切割cell（<font color=red>将每个tetrahedron分割为更多的凸多面体</font>）
 这个计算可以完全使用有理坐标来完成，因为planes之间的交点在有理数下是closed的，即使对于degenerate input也能确保robustness和correctness
 
 利用cell的convexity（<font color=red>PS：四面体用一系列plane切割后是凸的</font>）将polyhedral mesh转换为tetrahedral mesh：
@@ -184,7 +184,7 @@ input中的self-intersections可以自然地处理：
 通过不允许任何破坏这个invariant的操作，我们确保embedded surface始终包含在envelope中（Figure 4）
 ![[Pasted image 20240615202354.png]]
 ### Quality Measure
-作为优化的quality的度量，我们使用了3D conformal energy，这与许多常见的quality度量标准密切相关，表示为：$\varepsilon=\sum_{t\in T} \frac{tr(J_t^T)J_t}{det(J_t)^{\frac{2}{3}}}$ ，其中$J_t$是将tetrahedron $t$转换为regular tetrahedron的独特3D deformation的Jacobian
+作为优化的quality的度量，我们使用了3D conformal energy，这与许多常见的quality度量标准密切相关，表示为：==$\mathcal{E}=\sum_{t\in T} \frac{tr(J_t^T)J_t}{det(J_t)^{\frac{2}{3}}}$ （Eq.1，AMIPS energy）==，其中$J_t$是将tetrahedron $t$转换为regular tetrahedron的独特3D deformation的Jacobian
 这个energy不受到任何isotropic scaling的影响，但自然会惩罚needle-like element、flat和fat elements、slivers，并防止inversion
 	因为当element接近零体积时，它会发散到无穷大
 它是可微的，可以用Newton或Quasi-Newton iteration有效地最小化
@@ -206,7 +206,17 @@ input中的self-intersections可以自然地处理：
 3. swapping
 4. smoothing
 我们在tetrahedral mesh的顶点处存储一个target edge length值，用用户指定的期望edge length $l$来初始化
-...
+在（1）中，每个长度大于$4/3$乘以分配到其端点的平均target edge length（<font color=red>may be其端点邻接的edge的edge length的平均？</font>）的edge被split，然后平均值被赋予新的顶点
+	在（1）之后，如果一个顶点$v$的的$l_v$ ball内存在一个低质量的tetrahedron（$\mathcal{E}>8$），则将分配给它的target edge length除以2，否则乘以1.5
+	为了保证总能达到用户指定的密度，我们用用户指定的参数来限制长度
+在（2）中，如果一条边的长度小于$4l/5$，我们就使其collapse
+在（3）中，我们swap faces，如果它们能提高质量
+在（4）中，我们使用Newton迭代，逐个smooth所有顶点，最小化Eq.1在one-ring的平均值
+	只有roundable为floats的顶点才被smooth，其它的被跳过
+所有这些操作只有在不破坏上述invariant下才能被执行，且它们提高了网格质量（除了（1））
+在每个pass中，我们使用一个优先队列来决定操作的顺序（最长edge首先为了（1，3），最短edge首先为（2）），除了（4）其中的顶点按随机顺序处理
+	对于（4），我们使用analytic gradient和Hessian，Figure 7展示了mesh improvement步骤的效果
+![[Pasted image 20240618161342.png]]
 ## 3.3 Interior volume extraction
 注意，到目前为止，我们的算法还没有尝试定义一个closed surface来bounding a volume：
 	之前阶段构建了一个approximately constrained tetrahedralization，可能有一个nonmanifold、disconnected、open embedded surface
@@ -255,7 +265,7 @@ BSP-tree的构建可能会引入相对于face数量的平方数量的相交数
 我们解决了这个问题，跟踪open boundary，并在smoothing步骤中将其顶点重新reprojecting（Figure 11）
 ![[Pasted image 20240616153437.png]]
 如果一条edge上只有一个三角形，我们就认为它是open boundary
-### Envelope
+### Envelope Test
 # 4 Results
 ### Robustness and Performance
 ### Parameters
