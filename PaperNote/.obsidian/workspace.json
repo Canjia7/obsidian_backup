@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9679017cc934cf2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TCB-spline/TCB-spline-based Image Vectorization.md",
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TCB-spline/TCB-spline-based Image Vectorization.md",
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TCB-spline/TCB-spline-based Image Vectorization.md"
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md"
               }
             }
           }
@@ -146,12 +159,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "827b115b6e8e90cb",
+  "active": "9679017cc934cf2e",
   "lastOpenFiles": [
+    "Pasted image 20240621214752.png",
+    "Pasted image 20240621210010.png",
+    "Pasted image 20240621201126.png",
+    "Pasted image 20240621162225.png",
+    "Pasted image 20240621161330.png",
+    "TCB-spline/TCB-spline-based Image Vectorization.md",
+    "TCB-spline/Quadratic and cubic b-splines by generalizing higher-order voronoi diagrams.md",
+    "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
     "Tetrahedra/Tetrahedral Meshing in the Wild.md",
     "README.md",
     "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
-    "TCB-spline/TCB-spline-based Image Vectorization.md",
     "TCB-spline/TCB-spline-based Isogeometric Analysis Method with High-quality Parameterizations.md",
     "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
     "TCB-spline",
@@ -170,10 +190,6 @@
     "Pic/Pasted image 20240618201737.png",
     "Pic/Pasted image 20240618193448.png",
     "Pic/Pasted image 20240618191926.png",
-    "Pic/Pasted image 20240618164943.png",
-    "Pic/Pasted image 20240618163213.png",
-    "Pic/Pasted image 20240618162912.png",
-    "Pic/Pasted image 20240617212322.png",
     "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
     "Others",
     "Tetrahedra/Tetrahedral Meshing in the Wild 1.md",

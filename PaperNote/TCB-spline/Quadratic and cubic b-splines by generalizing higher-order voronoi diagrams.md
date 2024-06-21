@@ -1,0 +1,17 @@
+> @inproceedings{10.1145/1247069.1247100,
+author = {Liu, Yuanxin and Snoeyink, Jack},
+title = {Quadratic and cubic b-splines by generalizing higher-order voronoi diagrams},
+year = {2007},
+isbn = {9781595937056},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1247069.1247100},
+doi = {10.1145/1247069.1247100},
+abstract = {A long-standing problem in spline theory has been to generalize classic B-splines to the multivariate setting, and its full solution will have broad impact. We initiate a study of triangulations that generalize the duals of higher order Voronoi diagrams, and show that these can serve as a foundation for a family of multivariate splines that generalize the classic univariate B-splines. This paper focuseson Voronoi diagrams of orders two and three, which produce families of quadratic and cubic bivariate B-splines. We believe that these families are the most general bivariate B-splines to date and supportour belief by demonstrating that a classic quadratic box spline, the Zwart-Powell (ZP) element, is contained in our family. Our work is directly based on that of Neamtu, who established the fascinating connection between splines and higher order Voronoi diagrams.},
+booktitle = {Proceedings of the Twenty-Third Annual Symposium on Computational Geometry},
+pages = {150–157},
+numpages = {8},
+keywords = {multivariate splines, higher order Voronoi diagrams, centroid triangulation},
+location = {Gyeongju, South Korea},
+series = {SCG '07}
+}

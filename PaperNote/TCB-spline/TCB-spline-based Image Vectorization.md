@@ -21,6 +21,12 @@ keywords = {mesh optimization, knot placement, simplex splines, Vector images}
 # 1 Introduction
 # 2 Related Work
 # 3 TCB-SPLINES
+在我们图像是矢量化表示中，整个图像都被表示为一个spline surface，其控制点在5D空间（position+color）
+这里我们用triangle configuration B-splines或TCB-splines来表示图像
+	TCB-splines是定义在triangle configurations（t-configs）上的simplex splines的线性组合
+simplex splines和triangle configurations是TCB-splines构造的两个主要组成部分
+
+以下，我们将简要介绍simplex splines、t-configs、TCB-splines
 ## 3.1 Simplex Spline
 ## 3.2 T-configs and TCB-splines
 # 4 Algorithm overview
