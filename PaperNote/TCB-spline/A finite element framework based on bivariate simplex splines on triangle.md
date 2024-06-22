@@ -88,16 +88,82 @@ LTP从任意triangulation $\Gamma_0$开始，迭代地计算高阶的t-config fa
 
 我们记一个k次t-config family $\Gamma_k$的所有v-config的集合为$V(\Gamma_k)$
 
-LTP取一个k次t-config family$\Gamma_k$作为input，生成一个k+1次的t-config family $\Gamma_{k+1}$作为output
+LTP取一个k次t-config family $\Gamma_k$作为input，生成一个k+1次的t-config family $\Gamma_{k+1}$作为output
 
 对每个v-config $J\in V(\Gamma_k)$，我们首先得到由$J$的link构成的polygon $P$
 	即$P=\sum lk(J,\Gamma_k)$，见Figure 1b和f分别为$\sum lk(\{t_0\},\Gamma_k)$和$\sum lk(\{t_0,t_5\},\Gamma_k)$的例子
-如果$P\ne\emptyset$，则我们triangulate或partition $P$为triangle set $C$，见Figure 1c和f分别为$\sum lk(\{t_0\},\Gamma_k)$和$\sum lk(\{t_0,t_5\},\Gamma_k)$进行triangulation
+如果$P\ne\emptyset$，则我们triangulate或partition $P$为triangle set $C$，见Figure 1c和f分别为$\sum lk(\{t_0\},\Gamma_k)$和$\sum lk(\{t_0,t_5\},\Gamma_k)$进行triangulation（<font color=red>蓝色虚线</font>）
 然后，每个三角形$T\in C$和$J$构成一个k+1次的t-config（见Figure 1c和f），其包含进k+1 t-config family
-	即$\Gamma_{k+1}\leftarrow\Gamma_{k+1}\cup\{(T,J)|T\in C\}$
+	即 $\Gamma_{k+1}\leftarrow\Gamma_{k+1}\cup\{(T,J)|T\in C\}$
 
 伪码见Algorithm 1
 ![[Pasted image 20240621214752.png]]
 我们从任意triangulation $\Gamma_0$开始LTP，并重复应用LTP k次以获得k次t-config family $\Gamma_k$
-Figure 1展示了LTP达到2次的例子，第一行展示了从0次t-config生成1次t-config，第二行展示了从1次t-config生成2次t-config
+Figure 1展示了LTP达到2次的例子
+	第一行展示了从0次t-config生成1次t-config
+	第二行展示了从1次t-config生成2次t-config
 ![[Pasted image 20240621201126.png]]
+1. （a）初始的三角化，它对应于一个0阶==t-config== family $(\{t_0,t_1,t_2\},\emptyset)$， $(\{t_0,t_2,t_3\},\emptyset)$， $(\{t_0,t_3,t_4\},\emptyset)$，...
+2. （b）1阶的v-config $\{v_0\}\in V(\Gamma_0)$标记为黄色，以及e-v-config pairs $(\vec{t_1 t_2},\{t_0\})$，$(\vec{t_2 t_3},\{t_0\})$，$(\vec{t_3 t_4},\{t_0\})$，$(\vec{t_4 t_5},\{t_0\})$，$(\vec{t_5 t_6},\{t_0\})$，$(\vec{t_6 t_1},\{t_0\})$，分别由$(\{t_0,t_1,t_2\},\emptyset)$， $(\{t_0,t_2,t_3\},\emptyset)$， $(\{t_0,t_3,t_4\},\emptyset)$， $(\{t_0,t_4,t_5\},\emptyset)$， $(\{t_0,t_5,t_6\},\emptyset)$， $(\{t_0,t_6,t_1\},\emptyset)$生成（<font color=red>一个t-config由一个knot可以生成出一个e-config，与v-config合并为一个e-v-pair</font>），其中e-config标记为红色虚线
+3. （c）polygon $\sum lk(\{t_0\},\Gamma_0)=[t_1,t_2,t_3,t_4,t_5,t_6]$（填充为灰色），由links $lk(\{t_0\},\Gamma_0)=\{\vec{t_1 t_2},\vec{t_2 t_3},\vec{t_3 t_4},\vec{t_4 t_5},\vec{t_5 t_6},\vec{t_6 t_1}\}$和其triangulation（蓝色虚线）构成，其产生了四个1次的==t-config== $(\{t_1,t_2,t_3\},\{t_0\})$，$(\{t_1,t_3,t_6\},\{t_0\})$，$(\{t_6,t_3,t_4\},\{t_0\})$，$(\{t_6,t_4,t_5\},\{t_0\})$
+4. （d）e-v-config pair $(\vec{t_6 t_4},\{t_0,t_5\})$由1阶的t-config $(\{t_6,t_4,t_5\},\{t_0\})$生成（<font color=red>选的knot v=t5，则生成的v-config为{t0，t5}，生成的e-config为vec(t6 t4)</font>），其中e-config标记为红色虚线
+5. （e）e-v-config pairs $(\vec{t_8 t_6},\{t_0,t_5\})$，$(\vec{t_7 t_8},\{t_0,t_5\})$，$(\vec{t_4 t_7},\{t_0,t_5\})$共享一个v-config $\{t_0,t_5\}$，由1阶==t-configs== $(\{t_6,t_0,t_8\},\{t_5\})$，$(\{t_8,t_0,t_7\},\{t_5\})$，$(\{t_7,t_0,t_4\},\{t_5\})$分别生成（<font color=red>选择knot v=v0</font>），其中e-configs标记为红色虚线。这三个e-v-config pairs共享一个共同的v-config $\{t_0,t_5\}$，其中e-v-config pair $(\{t_6,t_4,t_5\},\{t_0\})$展示在图d
+6. （f）polygon $[t_8,t_6,t_4,t_7]$（填充为灰色）由link $lk(\{t_0,t_5\},\Gamma_1)$和其triangulation（蓝色虚线）构建，生成两个2次的==t-configs== $(\{t_8,t_6,t_7\},\{t_0,t_5\})$，$(\{t_7,t_6,t_4\},\{t_0,t_5\})$
+### Remark 2.1
+值得指出的是，如果使用不同的triangulation方法来获得初始triangulation $\Gamma_0$，或者划分LTP中出现的polygon，LTP可以为给定的一组knots产生不同的t-config families
+作为TCB-splines的一种特殊情况，当Delaunay triangulation用于初始triangulation和polygon划分时，LTP产生称为Delaunay configurations
+	结果t-config family由此称为==Delaunay configuration family==，相关的simplex splines称为DCB-splines
+
+LTP的一个适当的triangulation的criteria可能会因为不同的应用而不同
+从几何角度出发，针对基于TCB-splines的surface fitting，提出了一种feature sensitive的triangulation方法
+
+在Section 3.2中，我们会提出一种triangulation方法来生成TCB-splines basis function，它们至少是$C^1$-连续的，这样它们就可以作为解高阶PDE方程的基础
+## 2.3 Definition of TCB-splines
+由k次t-configs family $\Gamma_k$，我们可以为每个k次t-config $(T,I)$ 定义simplex splines $M(u|T\cup I)$，则TCB-spline basis functions为这些simplex splines的线性组合
+
+我们记 $\Gamma_k$ 中所有second knot subsets的集合为 $\mathcal{J}$
+给定$I\in\mathcal{J}$，$X_I=\{(T,I^*)|I^*=I,(T,I^*\in\Gamma_k)\}$为共享共有second knot subset $I$的t-configs集合
+与一个knot subset $I\in\mathcal{J}$相关联的k次TCB-splines basis function定义为：
+![[Pasted image 20240622171358.png]]
+$B_I(u)$的Greville site $\xi_I$定义为second knot subset $I$的平均，即$\xi_I=(\sum_{v\in I}v)/k$，这是单变量B-spline情况的推广
+Figure 2给出了一阶到三阶的TCB-spline basis function的例子
+已经被证明了：TCB-spline basis function构成一个非负的unity划分，具有automatic smoothness，具有local support和reproduce polynomials
+![[Pasted image 20240622171856.png]]
+### Remark 2.2
+TCB-splines可能是线性相关的
+虽然在实践中有一种方法可以消除TCB-splines的线性依赖性，但目前还没有保证TCB-splines线性无关的规则，导致分析中可能出现stiffness matrix奇异的情况
+处理这个问题有两种方法：
+1. 当coefficient matrix具有spurious zero eigenvalues时，我们可以使用conjugate gradients（CG），CG只需要stiffness matrix与向量的乘积，CG首先收敛到较大的特征值，然后按顺序扫过较低的modes，CG不能收敛到0特征值的mode
+2. 可以使用LDU分解...
+# 3 Computation of TCB-splines
+本节中，我们首先介绍如何在2D bounded domain（即PDE的solution domain）上放置knots，为了TCB-splines构造
+然后，我们描述LTP来保证在convex region上$C^{k-1}$-continuity和在concave region上$C^{1}$-continuity
+其次，我们详细介绍了TCB-splines的积分，这是在IGA中assembling stiffness matrix的关键步骤
+最后，我们提出了一种为TCB-splines的error-guided knot放置方法，以实现自适应refinement
+## 3.1 Evenly-distributed knot placement
+为了定义TCB-spline space，我们首先需要放置一组knots $K$
+这里，我们使用centroidal Voronoi tessellations（CVT）来在给定domain内均匀分布的general position生成knots
+...
+CVT的generators，其在general positions，被用于knots来定义TCB-splines space
+
+CVT方法在interior domain生成均匀间隔的knots，关联的$k(\geq 2)$次TCB-splines是$C^{k-1}$-continuity，这些TCB-splines及其derivatives在domain boundary上消失
+为了保证TCB-splines在domain boundary $\partial \Omega$ 的划分的untiy性质，与单变量情况类似，我们在boundary上引入coalescent和collinear knots，并计算TCB-splines如下：
+1. 均匀分布的boundary knots和interior knots通过调整CVT结果来生成...
+2. 对于k次TCB-splines，在corner的knot被重复$k+1$，即有$k+1$个knots共享在corner的相同位置，这样的knots是==coalescent==
+3. 每个corner上的coalescent knots被劳动，使得它们在general positions，这一步提供了一个拓扑结构（即初始triangulation $\Gamma_0$的connectivity）来计算t-config family，下一节中将详细讨论
+4. 我们计算t-config family，并构造了相应的simplex splines，并让扰动size消失，即我们只是在计算t-config family中单独对待coalescent knots，在相关的simplex splines的计算中使用无扰动的knots
+
+上述knot放置方法产生了沿boundaries执行等效的单变量B-splines的TCB-splines集合
+Figure 3展示了一个3次TCB-spline basis function的例子，在boundaries上有5个collinear knots，其对边界的约束是经典的单变量3次B-spline basis function
+![[Pasted image 20240622202255.png]]
+Figure 4上左展示了一个定义在coalescent knots（multiplicity为3）的2阶TCB-spline basis function例子，其对边界的约束时multiplicity为3的knots上的单变量2次B-spline basis function
+![[Pasted image 20240622202518.png]]
+### Remark 3.1
+最直接获得均匀间隔的knots的方法是使用一个knots的regular grid
+然而，以这种grid构建的knots不适合TCB-splines，因为其包含collinear knots，导致TCB-splines的continuity降低
+为了在interior domain中避免collinear knots，我们使用CVT方法来均匀且随机地生成knots
+其它方法，例如possion-disk sampling方法，可能也可以在general position生成knots
+### Remark 3.2
+实际应用中，collinear knots和coalescent knots在parametric domain的内部是不希望出现的，它们会降低simplex splines的continuity order
+在我们的框架中，使用CVT来生成给定预先指定密度的均匀间隔的knots，虽然不能保证CVT方法可以避免collinear knots，但在数值上我们的实验从未在parametric domain内部发现这些knots
+如果在任何情况下collinear knots出现，我们可以扰动这些knots，或者在局部执行Lloyd的迭代来数值地消除它们
