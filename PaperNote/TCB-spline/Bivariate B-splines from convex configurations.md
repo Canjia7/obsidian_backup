@@ -33,3 +33,17 @@ spline是定义在一组knots上的piecewise polynomial function
 	首先，利用de Boor引入的simplex splines推广B-splines，其中k阶simplex spline定义在一个k+d+1个knots的subset上
 	其次，选择的$S$中k+d+1个knots的configuration，是那些存在一个sphere穿过d+1个knots，其它k个knots在sphere内部，且剩余的$S$中的knots在sphere的外部
 	这样的configuration称为==Delaunay configurations==
+
+本文，我们提出了一个更一般的方法，来在$d=2$的情况下选择configurations，即用convex pseudo-circles的极大family来替代circles
+回想一下，一个convex pseudo-circles是一组最多pairwise intersect两次的convex Jordan curves
+我们证明了，如果我们取这样定义的任意configuration family，且是最大的包含，则在这些configurations定义的k阶simplex splines张成一个bivariate spline space，其妈妈组polynomial reproduction性质
+我们也证明了这样的一个configuration family与Delaunay configuration family包含相同数量的elements
+	即相应的spline space由带下相等的spanning set生成
+
+在2007年，Liu和Snoeyink已经指出Neamtu的推广虽然优雅，但在可以生成的spline类型上是有限制的
+他们提出了一种算法方法，来在$d=2$生成更一般的configurations
+他们证明了他们的算法有效地构造了$k=3$以内的valid configurations
+即使实验结果表明该算法始终有效，但这从而在一般情况下得到证明
+然而，在有其算法构造的configurations上定义的simplex splines在应用中显得很有趣，特别是它们可以表示具有sharp features的represent surfaces，并作为isogeometric analysis的基础
+
+本文证明了由Liu和Snoeyink的算法构造的configurations正是这里定义的convex pseudo-circles的最大family，这证明了算法总是有效的

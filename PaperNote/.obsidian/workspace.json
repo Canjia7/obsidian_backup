@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "68f6c1e23bc2ee25",
+        "id": "70e9786664f5c661",
         "type": "tabs",
         "children": [
           {
-            "id": "86841374a45536dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ef5ff9df8f834c51",
+            "id": "135c946537a5db2d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,22 +146,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ef5ff9df8f834c51",
+  "active": "135c946537a5db2d",
   "lastOpenFiles": [
-    "Pasted image 20240622211208.png",
+    "Pic/Pasted image 20240623171556.png",
     "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+    "Offset/Uniform offsetting of polygonal model based on Layered Depth-Normal Images.md",
+    "Pic/Pasted image 20240623172832.png",
+    "Pic/Pasted image 20240623172758.png",
+    "Pic/Pasted image 20240623172745.png",
+    "Offset/Fast Intersection-Free Offset Surface Generation From Freeform Models With Triangular Meshes.md",
+    "Pic/Pasted image 20240623172344.png",
+    "Pic/Pasted image 20240623172311.png",
+    "Pic/Pasted image 20240623172201.png",
+    "Offset/Feature-Preserving Offset Mesh Generation from Topology-Adapted Octrees.md",
     "TCB-spline/Bivariate B-splines from convex configurations.md",
+    "Offset/Alpha wrapping with an offset.md",
+    "Pic/Pasted image 20240622211208.png",
+    "Pic/Pasted image 20240623161816.png",
+    "Pic/Pasted image 20240623161723.png",
+    "Offset",
     "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
-    "Pic/Pasted image 20240622171358.png",
-    "Pic/Pasted image 20240622202518.png",
-    "Pic/Pasted image 20240622202255.png",
-    "Pic/Pasted image 20240622171856.png",
-    "Pic/Pasted image 20240622171851.png",
-    "Pic/Pasted image 20240621161330.png",
-    "Pic/Pasted image 20240621214752.png",
-    "Pic/Pasted image 20240621210010.png",
-    "Pic/Pasted image 20240621201126.png",
-    "Pic/Pasted image 20240621162225.png",
     "TCB-spline/TCB-spline-based Image Vectorization.md",
     "TCB-spline/Quadratic and cubic b-splines by generalizing higher-order voronoi diagrams.md",
     "Tetrahedra/Tetrahedral Meshing in the Wild.md",
@@ -196,8 +187,6 @@
     "Tetrahedra/Tetrahedral Meshing in the Wild 1.md",
     "Pic",
     "2024-06-14.md",
-    "create a link.md",
-    "Welcome.md",
     "Tetrahedra",
     "未命名.canvas",
     "未命名 1.canvas"
