@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TCB-spline/Bivariate B-splines from convex configurations.md",
+                "file": "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d3cf296278be3220",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TCB-spline/Bivariate B-splines from convex configurations.md",
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TCB-spline/Bivariate B-splines from convex configurations.md",
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TCB-spline/Bivariate B-splines from convex configurations.md"
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md"
               }
             }
           }
@@ -146,10 +159,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "135c946537a5db2d",
+  "active": "d3cf296278be3220",
   "lastOpenFiles": [
-    "Pic/Pasted image 20240623171556.png",
+    "Tetrahedra/Convex decompositions of polyhedra.md",
+    "Pasted image 20240626112220.png",
+    "Pasted image 20240626112018.png",
+    "Pasted image 20240626111434.png",
+    "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
     "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+    "Pasted image 20240625204055.png",
+    "TCB-spline/Bivariate B-splines from convex configurations.md",
+    "Pic/Pasted image 20240623171556.png",
     "Offset/Uniform offsetting of polygonal model based on Layered Depth-Normal Images.md",
     "Pic/Pasted image 20240623172832.png",
     "Pic/Pasted image 20240623172758.png",
@@ -157,20 +177,14 @@
     "Offset/Fast Intersection-Free Offset Surface Generation From Freeform Models With Triangular Meshes.md",
     "Pic/Pasted image 20240623172344.png",
     "Pic/Pasted image 20240623172311.png",
-    "Pic/Pasted image 20240623172201.png",
     "Offset/Feature-Preserving Offset Mesh Generation from Topology-Adapted Octrees.md",
-    "TCB-spline/Bivariate B-splines from convex configurations.md",
     "Offset/Alpha wrapping with an offset.md",
-    "Pic/Pasted image 20240622211208.png",
-    "Pic/Pasted image 20240623161816.png",
-    "Pic/Pasted image 20240623161723.png",
     "Offset",
     "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
     "TCB-spline/TCB-spline-based Image Vectorization.md",
     "TCB-spline/Quadratic and cubic b-splines by generalizing higher-order voronoi diagrams.md",
     "Tetrahedra/Tetrahedral Meshing in the Wild.md",
     "README.md",
-    "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
     "TCB-spline/TCB-spline-based Isogeometric Analysis Method with High-quality Parameterizations.md",
     "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
     "TCB-spline",
@@ -186,7 +200,6 @@
     "Others",
     "Tetrahedra/Tetrahedral Meshing in the Wild 1.md",
     "Pic",
-    "2024-06-14.md",
     "Tetrahedra",
     "未命名.canvas",
     "未命名 1.canvas"

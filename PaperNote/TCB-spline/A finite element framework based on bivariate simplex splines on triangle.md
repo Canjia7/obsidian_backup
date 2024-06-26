@@ -150,7 +150,7 @@ CVT方法在interior domain生成均匀间隔的knots，关联的$k(\geq 2)$次T
 为了保证TCB-splines在domain boundary $\partial \Omega$ 的划分的untiy性质，与单变量情况类似，我们在boundary上引入coalescent和collinear knots，并计算TCB-splines如下：
 1. 均匀分布的boundary knots和interior knots通过调整CVT结果来生成...
 2. 对于k次TCB-splines，在corner的knot被重复$k+1$，即有$k+1$个knots共享在corner的相同位置，这样的knots是==coalescent==
-3. 每个corner上的coalescent knots被劳动，使得它们在general positions，这一步提供了一个拓扑结构（即初始triangulation $\Gamma_0$的connectivity）来计算t-config family，下一节中将详细讨论
+3. 每个corner上的coalescent knots被扰动，使得它们在general positions，这一步提供了一个拓扑结构（即初始triangulation $\Gamma_0$的connectivity）来计算t-config family，下一节中将详细讨论
 4. 我们计算t-config family，并构造了相应的simplex splines，并让扰动size消失，即我们只是在计算t-config family中单独对待coalescent knots，在相关的simplex splines的计算中使用无扰动的knots
 
 上述knot放置方法产生了沿boundaries执行等效的单变量B-splines的TCB-splines集合
@@ -167,3 +167,5 @@ Figure 4上左展示了一个定义在coalescent knots（multiplicity为3）的2
 实际应用中，collinear knots和coalescent knots在parametric domain的内部是不希望出现的，它们会降低simplex splines的continuity order
 在我们的框架中，使用CVT来生成给定预先指定密度的均匀间隔的knots，虽然不能保证CVT方法可以避免collinear knots，但在数值上我们的实验从未在parametric domain内部发现这些knots
 如果在任何情况下collinear knots出现，我们可以扰动这些knots，或者在局部执行Lloyd的迭代来数值地消除它们
+## 3.2 C1-continuity around corners
+![[Pasted image 20240625204055.png]]
