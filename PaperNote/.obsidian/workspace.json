@@ -8,19 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "135c946537a5db2d",
+            "id": "f4887f9e483617b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
+                "file": "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d3cf296278be3220",
+            "id": "8a248915e0e83c56",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+                "file": "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+                "file": "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md"
+                "file": "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md"
               }
             }
           }
@@ -159,24 +158,28 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d3cf296278be3220",
+  "active": "f4887f9e483617b3",
   "lastOpenFiles": [
-    "Tetrahedra/Convex decompositions of polyhedra.md",
-    "Pasted image 20240626112220.png",
-    "Pasted image 20240626112018.png",
-    "Pasted image 20240626111434.png",
-    "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
     "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
-    "Pasted image 20240625204055.png",
+    "Tetrahedra/A Point-Placement Strategy for Conforming Delaunay Tetrahedralization.md",
+    "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
+    "Pasted image 20240628201400.png",
+    "Pasted image 20240628200603.png",
+    "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
+    "Pasted image 20240628155147.png",
+    "Pic/Pasted image 20240625204055.png",
+    "Pic/Pasted image 20240628103341.png",
+    "Pic/Pasted image 20240628095404.png",
+    "Tetrahedra/Constrained Delaunay Tetrahedrization：A Robust and Practical Approach.md",
+    "Tetrahedra/Convex decompositions of polyhedra.md",
+    "Pic/Pasted image 20240626112220.png",
+    "Pic/Pasted image 20240626112018.png",
+    "Pic/Pasted image 20240626111434.png",
+    "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
     "TCB-spline/Bivariate B-splines from convex configurations.md",
     "Pic/Pasted image 20240623171556.png",
     "Offset/Uniform offsetting of polygonal model based on Layered Depth-Normal Images.md",
-    "Pic/Pasted image 20240623172832.png",
-    "Pic/Pasted image 20240623172758.png",
-    "Pic/Pasted image 20240623172745.png",
     "Offset/Fast Intersection-Free Offset Surface Generation From Freeform Models With Triangular Meshes.md",
-    "Pic/Pasted image 20240623172344.png",
-    "Pic/Pasted image 20240623172311.png",
     "Offset/Feature-Preserving Offset Mesh Generation from Topology-Adapted Octrees.md",
     "Offset/Alpha wrapping with an offset.md",
     "Offset",
@@ -186,9 +189,7 @@
     "Tetrahedra/Tetrahedral Meshing in the Wild.md",
     "README.md",
     "TCB-spline/TCB-spline-based Isogeometric Analysis Method with High-quality Parameterizations.md",
-    "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
     "TCB-spline",
-    "Tetrahedra/Constrained Delaunay Tetrahedrization：A Robust and Practical Approach.md",
     "Tetrahedra/Harmonic triangulations.md",
     "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
     "Tetrahedra/Memory‑efficient Boundary‑preserving Tetrahedralization of Large  Three‑dimensional Meshes.md",
@@ -196,9 +197,7 @@
     "Tetrahedra/On Tetrahedralisations of Generalised Chazelle Polyhedra with Interior Steiner Points.md",
     "Tetrahedra/Tetgen - A Delaunay-Based Quality Tetrahedral Mesh Generator.md",
     "Tetrahedra/Tetrahedral Mesh Generation by Delaunay Refinement.md",
-    "Tetrahedra/‘Ultimate’ robustness in meshing an arbitrary polyhedron.md",
     "Others",
-    "Tetrahedra/Tetrahedral Meshing in the Wild 1.md",
     "Pic",
     "Tetrahedra",
     "未命名.canvas",

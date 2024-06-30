@@ -38,14 +38,14 @@ Delaunay四面体化的优势…
 ![[Pasted image 20240615101047.png]]
 解决这个问题有三个既定方法
 
-	第一个是conforming Delaunay方法，其额外的顶点被插入到mesh中，同时保持四面体的Delaunay性质，直到它符合边界，这意味着每个边界被表示为mesh中三角面的一个并集
+第一个是conforming Delaunay方法，其额外的顶点被插入到mesh中，同时保持四面体的Delaunay性质，直到它符合边界，这意味着每个边界被表示为mesh中三角面的一个并集
 	在哪里插入额外的顶点以获得boundary conformity是很困难的
 	许多方法在Figure 1的例子中也能工作
 	然而，它们的四面体化可能具有非常短的边，从而产生非常小的四面体，并且额外顶点数可能会很大
 	这些算法甚至不能生成网格以输入域的多项式复杂度
 	没有人知道在一个纯粹的Delaunay网格中如何平衡对高质量element的需求和对boundary conformity的需求
 	
-	第二个是工程文献中最常见的方法，可能被称为almost Delaunay方法，通过在边界与四面体的面或边相交的相交的地方插入额外的顶点来恢复missing域边界
+第二个是工程文献中最常见的方法，可能被称为almost Delaunay方法，通过在边界与四面体的面或边相交的相交的地方插入额外的顶点来恢复missing域边界
 	然而，在插入顶点时，Delaunay属性并没有被完全维护，所以顶点插入不会将恢复的边界从网格中剔除
 	四面体细分方式是引入新的顶点，而不消除表示域边界的现有面和边
 	一旦所有边界被恢复，网格生成器可能会尝试使用拓扑翻转来恢复网格的Delaunay属性，但由于翻转不允许干扰域边界，因此网格通常不完全是Delaunay的
@@ -53,7 +53,7 @@ Delaunay四面体化的优势…
 	一个结果是，好的Delaunay refinement不能保证很好的工作，而almost Delaunay网格生成在许多情况下都能很好地工作，但它们不太可能控制Figure 1中元素的质量
 	此外，除非它们是精心设计的，否则也可能产生非常短的边，或者需要插入比需要的更多的顶点
 	
-	第三种方法使用CDTs
+第三种方法使用CDTs
 	CDTs完全由CDT组成，它并不总是Delaunay四面体，但仍然保留了Delaunay的两个有利性质：有助于控制插值误差、有助于证明Delaunay refinement算法可靠地生成良好的网格
 	CDTs具有比conforming Delaunay四面体所需的更少的顶点的优势，正如本文展示的，直接形成CDTs不会产生不必要的短边
 
@@ -187,7 +187,7 @@ CCDT相对于$X$的conforming Delaunay四面体化的一个优点是，插入的
 本文的其余部分描述如何构造$X$的CCDT
 # 3 Edge Protection
 定理使得3D CDTs是有用的，有一个简单的条件可以保证CDT的存在
-一个PLC $X$是edge-protected的，即$X$的所有线段都是strongly Delaunay的
+一个PLC $X$是==edge-protected==的，即$X$的所有线段都是strongly Delaunay的
 
 ==Theorem 1==【20】如果$X$是edge-protected的，即$X$有一个CDT
 
@@ -203,7 +203,7 @@ CCDT相对于$X$的conforming Delaunay四面体化的一个优点是，插入的
 
 接下来，一个更强更有用的Theorem 1的版本
 一个PLC线段通常作为几个面的边界，这些面可以按照在线段周围的旋转顺序排序
-一个线段称为grazeable
+一个线段称为==grazeable==
 	即按旋转顺序的两个连续面被180°或更大的内角分开（见Figure 10）
 	或者线段包含在少于两个面中（一个内角正对着三角剖分域的内部，180°或更大的外角不妨碍CDT）
 只有grazeble线段需要为strongly Delaunay来保证CDT
