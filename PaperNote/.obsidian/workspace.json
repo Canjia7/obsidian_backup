@@ -4,34 +4,57 @@
     "type": "split",
     "children": [
       {
-        "id": "70e9786664f5c661",
+        "id": "ec3f889edcc21b7c",
         "type": "tabs",
         "children": [
           {
-            "id": "f4887f9e483617b3",
+            "id": "1b10be324c01c454",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
+                "file": "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8a248915e0e83c56",
+            "id": "784a01c5783dfcdd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+                "file": "Mesh Operation/Bilateral mesh denoising.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "fc4e86ab2dc7ec8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2bf64ff410c0379",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pic/Pasted image 20240703225540.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
+                "file": "Pic/Pasted image 20240703225540.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
+                "file": "Pic/Pasted image 20240703225540.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md"
+                "file": "Pic/Pasted image 20240703225540.png"
               }
             }
           }
@@ -158,45 +181,47 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f4887f9e483617b3",
+  "active": "7997b6435b2501ba",
   "lastOpenFiles": [
-    "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
-    "Tetrahedra/A Point-Placement Strategy for Conforming Delaunay Tetrahedralization.md",
+    "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
+    "Pic/Pasted image 20240703231047.png",
+    "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
+    "Tetrahedra/Memory‑efficient Boundary‑preserving Tetrahedralization of Large  Three‑dimensional Meshes.md",
     "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
-    "Pasted image 20240628201400.png",
-    "Pasted image 20240628200603.png",
+    "Tetrahedra/‘Ultimate’ robustness in meshing an arbitrary polyhedron.md",
+    "Pic/Pasted image 20240703230623.png",
+    "Mesh Operation/Bilateral mesh denoising.md",
+    "Pic/Pasted image 20240703225959.png",
+    "Pic/Pasted image 20240703225956.png",
+    "Mesh Operation",
+    "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
+    "Pic/Pasted image 20240703225540.png",
+    "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
+    "Pic/Pasted image 20240628155147.png",
+    "Mesh Reconstruction",
+    "Offset/A Parallel Feature-preserving Mesh Variable Offsetting Approach Based On Dynamic Programming.md",
+    "Pic/Pasted image 20240703224507.png",
+    "Pic/Pasted image 20240703205210.png",
+    "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
     "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
-    "Pasted image 20240628155147.png",
-    "Pic/Pasted image 20240625204055.png",
-    "Pic/Pasted image 20240628103341.png",
-    "Pic/Pasted image 20240628095404.png",
     "Tetrahedra/Constrained Delaunay Tetrahedrization：A Robust and Practical Approach.md",
+    "Tetrahedra/A Point-Placement Strategy for Conforming Delaunay Tetrahedralization.md",
+    "Pic/Pasted image 20240628201400.png",
+    "Pic/Pasted image 20240628200603.png",
     "Tetrahedra/Convex decompositions of polyhedra.md",
-    "Pic/Pasted image 20240626112220.png",
-    "Pic/Pasted image 20240626112018.png",
-    "Pic/Pasted image 20240626111434.png",
     "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
     "TCB-spline/Bivariate B-splines from convex configurations.md",
-    "Pic/Pasted image 20240623171556.png",
     "Offset/Uniform offsetting of polygonal model based on Layered Depth-Normal Images.md",
     "Offset/Fast Intersection-Free Offset Surface Generation From Freeform Models With Triangular Meshes.md",
     "Offset/Feature-Preserving Offset Mesh Generation from Topology-Adapted Octrees.md",
     "Offset/Alpha wrapping with an offset.md",
     "Offset",
-    "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
     "TCB-spline/TCB-spline-based Image Vectorization.md",
     "TCB-spline/Quadratic and cubic b-splines by generalizing higher-order voronoi diagrams.md",
     "Tetrahedra/Tetrahedral Meshing in the Wild.md",
     "README.md",
     "TCB-spline/TCB-spline-based Isogeometric Analysis Method with High-quality Parameterizations.md",
     "TCB-spline",
-    "Tetrahedra/Harmonic triangulations.md",
-    "Tetrahedra/Fast Tetrahedral Meshing in the Wild.md",
-    "Tetrahedra/Memory‑efficient Boundary‑preserving Tetrahedralization of Large  Three‑dimensional Meshes.md",
-    "Tetrahedra/Meshing Piecewise Linear Complexes by Constrained Delaunay Tetrahedralizations.md",
-    "Tetrahedra/On Tetrahedralisations of Generalised Chazelle Polyhedra with Interior Steiner Points.md",
-    "Tetrahedra/Tetgen - A Delaunay-Based Quality Tetrahedral Mesh Generator.md",
-    "Tetrahedra/Tetrahedral Mesh Generation by Delaunay Refinement.md",
     "Others",
     "Pic",
     "Tetrahedra",
