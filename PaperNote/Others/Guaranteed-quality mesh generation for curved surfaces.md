@@ -1,0 +1,16 @@
+> @inproceedings{10.1145/160985.161150,
+author = {Chew, L. Paul},
+title = {Guaranteed-quality mesh generation for curved surfaces},
+year = {1993},
+isbn = {0897915828},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/160985.161150},
+doi = {10.1145/160985.161150},
+abstract = {For several commonly-used solution techniques for partial differential equations, the first step is to divide the problem region into simply-shaped elements, creating a mesh. We present a technique for creating high-quality triangular meshes for regions on curved surfaces. This technique is an extension of previous methods we developed for regions in the plane. For both flat and curved surfaces, the resulting meshes are guaranteed to exhibit the following properties: (1) internal and external boundaries are respected, (2) element shapes are guaranteed—all elements are triangles with angles between 30 and 120 degrees (with the exception of badly shaped elements that may be required by the specified boundary), and (3) element density can be controlled, producing small elements in “interesting” areas and large elements elsewhere. An additional contribution of this paper is the development of a practical generalization of Delaunay triangulation to curved surfaces.},
+booktitle = {Proceedings of the Ninth Annual Symposium on Computational Geometry},
+pages = {274–280},
+numpages = {7},
+location = {San Diego, California, USA},
+series = {SCG '93}
+}

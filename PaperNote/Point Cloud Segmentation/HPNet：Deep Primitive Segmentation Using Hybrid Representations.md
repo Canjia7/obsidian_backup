@@ -1,0 +1,1 @@
+> @InProceedings{Yan_2021_ICCV, author = {Yan, Siming and Yang, Zhenpei and Ma, Chongyang and Huang, Haibin and Vouga, Etienne and Huang, Qixing}, title = {HPNet: Deep Primitive Segmentation Using Hybrid Representations}, booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, month = {October}, year = {2021}, pages = {2753-2762} }

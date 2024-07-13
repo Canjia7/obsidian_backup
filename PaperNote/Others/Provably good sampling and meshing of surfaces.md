@@ -1,0 +1,15 @@
+> @article{BOISSONNAT2005405,
+title = {Provably good sampling and meshing of surfaces},
+journal = {Graphical Models},
+volume = {67},
+number = {5},
+pages = {405-451},
+year = {2005},
+note = {Solid Modeling and Applications},
+issn = {1524-0703},
+doi = {https://doi.org/10.1016/j.gmod.2005.01.004},
+url = {https://www.sciencedirect.com/science/article/pii/S1524070305000056},
+author = {Jean-Daniel Boissonnat and Steve Oudot},
+keywords = {Surface mesh generation, -sampling, Surface approximation, Restricted Delaunay triangulation, Mesh refinement},
+abstract = {The notion of ε-sample, introduced by Amenta and Bern, has proven to be a key concept in the theory of sampled surfaces. Of particular interest is the fact that, if E is an ε-sample of a C2-continuous surface S for a sufficiently small ε, then the Delaunay triangulation of E restricted to S is a good approximation of S, both in a topological and in a geometric sense. Hence, if one can construct an ε-sample, one also gets a good approximation of the surface. Moreover, correct reconstruction is ensured by various algorithms. In this paper, we introduce the notion of loose ε-sample. We show that the set of loose ε-samples contains and is asymptotically identical to the set of ε-samples. The main advantage of loose ε-samples over ε-samples is that they are easier to check and to construct. We also present a simple algorithm that constructs provably good surface samples and meshes. Given a C2-continuous surface S without boundary, the algorithm generates a sparse ε-sample E and at the same time a triangulated surface Del|S(E). The triangulated surface has the same topological type as S, is close to S for the Hausdorff distance and can provide good approximations of normals, areas and curvatures. A notable feature of the algorithm is that the surface needs only to be known through an oracle that, given a line segment, detects whether the segment intersects the surface and, in the affirmative, returns the intersection points. This makes the algorithm useful in a wide variety of contexts and for a large class of surfaces.}
+}

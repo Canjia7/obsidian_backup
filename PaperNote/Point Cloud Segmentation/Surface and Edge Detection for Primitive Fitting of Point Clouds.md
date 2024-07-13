@@ -1,0 +1,17 @@
+> @inproceedings{10.1145/3588432.3591522,
+author = {Li, Yuanqi and Liu, Shun and Yang, Xinran and Guo, Jianwei and Guo, Jie and Guo, Yanwen},
+title = {Surface and Edge Detection for Primitive Fitting of Point Clouds},
+year = {2023},
+isbn = {9798400701597},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3588432.3591522},
+doi = {10.1145/3588432.3591522},
+abstract = {Fitting primitives for point cloud data to obtain a structural representation has been widely adopted for reverse engineering and other graphics applications. Existing segmentation-based approaches only segment primitive patches but ignore edges that indicate boundaries of primitives, leading to inaccurate and incomplete reconstruction. To fill the gap, we present a novel surface and edge detection network (SED-Net) for accurate geometric primitive fitting of point clouds. The key idea is to learn parametric surfaces (including B-spline patches) and edges jointly that can be assembled into a regularized and seamless CAD model in one unified and efficient framework. SED-Net is equipped with a two-branch structure to extract type and edge features and geometry features of primitives. At the core of our network is a two-stage feature fusion mechanism to utilize the type, edge and geometry features fully. Precisely detected surface patches can be employed as contextual information to facilitate the detection of edges and corners. Benefiting from the simultaneous detection of surfaces and edges, we can obtain a parametric and compact model representation. This enables us to represent a CAD model with predefined primitive-specific meshes and also allows users to edit its shape easily. Extensive experiments and comparisons against previous methods demonstrate our effectiveness and superiority.},
+booktitle = {ACM SIGGRAPH 2023 Conference Proceedings},
+articleno = {44},
+numpages = {10},
+keywords = {shape reconstruction, point cloud, deep neural network, Primitive fitting},
+location = {Los Angeles, CA, USA},
+series = {SIGGRAPH '23}
+}

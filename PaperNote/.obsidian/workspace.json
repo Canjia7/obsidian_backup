@@ -4,57 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "ec3f889edcc21b7c",
+        "id": "d4fcc4e544091d59",
         "type": "tabs",
         "children": [
           {
-            "id": "1b10be324c01c454",
+            "id": "081c331db7a0f848",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
+                "file": "Tetrahedra/Variational tetrahedral meshing.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "784a01c5783dfcdd",
+            "id": "6a559cbf711f6694",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mesh Operation/Bilateral mesh denoising.md",
+                "file": "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "fc4e86ab2dc7ec8c",
+            "id": "0356879762ba547f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
+                "file": "Tetrahedra/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "e2bf64ff410c0379",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pic/Pasted image 20240703225540.png"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pic/Pasted image 20240703225540.png",
+                "file": "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pic/Pasted image 20240703225540.png",
+                "file": "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pic/Pasted image 20240703225540.png"
+                "file": "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md"
               }
             }
           }
@@ -169,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 280.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,46 +171,50 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7997b6435b2501ba",
+  "active": "6a559cbf711f6694",
   "lastOpenFiles": [
+    "Pasted image 20240713172045.png",
+    "Pasted image 20240713170521.png",
+    "Tetrahedra/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
+    "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
+    "Tetrahedra/Variational tetrahedral meshing.md",
+    "Tetrahedra/Dihedral angle-based maps of tetrahedral meshes.md",
+    "Others/Provably good sampling and meshing of surfaces.md",
+    "Others/Guaranteed-quality mesh generation for curved surfaces.md",
+    "Tetrahedra/Convex decompositions of polyhedra.md",
+    "Review/Point Cloud Fitting Based on High-Accuracy Segmentation.md",
+    "Review/ASDF：Arbitrarily-detailed triangulating Signed Distance Functions.md",
+    "Pic/Pasted image 20240712113930.png",
+    "Review/Superpixel Segmentation Based on Translation Equivariant Seed and Iterative Boundary Movement.md",
+    "Point Cloud Segmentation/HPNet：Deep Primitive Segmentation Using Hybrid Representations.md",
+    "Point Cloud Segmentation",
+    "Pic/Pasted image 20240705172343.png",
+    "Point Cloud Segmentation/Implicit Conversion of Manifold B-Rep Solids by Neural Halfspace Representation.md",
+    "Point Cloud Segmentation/Surface and Edge Detection for Primitive Fitting of Point Clouds.md",
+    "Point Cloud Segmentation/Parsenet：A parametric surface fitting network for 3d point clouds.md",
+    "Pic/Pasted image 20240711151711.png",
+    "Others/Variational mesh segmentation via quadric surface fitting.md",
+    "Pic/Pasted image 20240711144115.png",
+    "BRep/Efficient contact determination between solids with boundary representations (B-Rep).md",
+    "Review",
+    "BRep",
+    "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
+    "Mesh Operation/Bilateral mesh denoising.md",
+    "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
+    "Pic/Pasted image 20240703225540.png",
     "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
     "Pic/Pasted image 20240703231047.png",
-    "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
     "Tetrahedra/Memory‑efficient Boundary‑preserving Tetrahedralization of Large  Three‑dimensional Meshes.md",
     "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
     "Tetrahedra/‘Ultimate’ robustness in meshing an arbitrary polyhedron.md",
     "Pic/Pasted image 20240703230623.png",
-    "Mesh Operation/Bilateral mesh denoising.md",
     "Pic/Pasted image 20240703225959.png",
     "Pic/Pasted image 20240703225956.png",
     "Mesh Operation",
-    "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
-    "Pic/Pasted image 20240703225540.png",
     "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
-    "Pic/Pasted image 20240628155147.png",
     "Mesh Reconstruction",
     "Offset/A Parallel Feature-preserving Mesh Variable Offsetting Approach Based On Dynamic Programming.md",
-    "Pic/Pasted image 20240703224507.png",
-    "Pic/Pasted image 20240703205210.png",
-    "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
-    "Tetrahedra/Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery.md",
-    "Tetrahedra/Constrained Delaunay Tetrahedrization：A Robust and Practical Approach.md",
-    "Tetrahedra/A Point-Placement Strategy for Conforming Delaunay Tetrahedralization.md",
-    "Pic/Pasted image 20240628201400.png",
-    "Pic/Pasted image 20240628200603.png",
-    "Tetrahedra/Convex decompositions of polyhedra.md",
-    "Tetrahedra/BSP-Assisted Constrained Tetrahedralization.md",
-    "TCB-spline/Bivariate B-splines from convex configurations.md",
-    "Offset/Uniform offsetting of polygonal model based on Layered Depth-Normal Images.md",
-    "Offset/Fast Intersection-Free Offset Surface Generation From Freeform Models With Triangular Meshes.md",
-    "Offset/Feature-Preserving Offset Mesh Generation from Topology-Adapted Octrees.md",
-    "Offset/Alpha wrapping with an offset.md",
     "Offset",
-    "TCB-spline/TCB-spline-based Image Vectorization.md",
-    "TCB-spline/Quadratic and cubic b-splines by generalizing higher-order voronoi diagrams.md",
-    "Tetrahedra/Tetrahedral Meshing in the Wild.md",
-    "README.md",
-    "TCB-spline/TCB-spline-based Isogeometric Analysis Method with High-quality Parameterizations.md",
     "TCB-spline",
     "Others",
     "Pic",
