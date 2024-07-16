@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d4fcc4e544091d59",
+        "id": "f8398d7bd737cd11",
         "type": "tabs",
         "children": [
           {
-            "id": "081c331db7a0f848",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tetrahedra/Variational tetrahedral meshing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a559cbf711f6694",
+            "id": "05bf8af2885e6906",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "0356879762ba547f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tetrahedra/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 488.5
+    "width": 488.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d3fd6fd70a08131",
@@ -171,45 +147,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6a559cbf711f6694",
+  "active": "05bf8af2885e6906",
   "lastOpenFiles": [
-    "Pasted image 20240713172045.png",
-    "Pasted image 20240713170521.png",
-    "Tetrahedra/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
-    "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
+    "Pasted image 20240714193102.png",
+    "Pasted image 20240714193054.png",
+    "Pasted image 20240714165717.png",
+    "Pasted image 20240714165236.png",
+    "Pasted image 20240714152440.png",
+    "Pasted image 20240714152059.png",
+    "Pasted image 20240714140618.png",
+    "Pasted image 20240714132225.png",
+    "Pasted image 20240714130733.png",
+    "Pasted image 20240713203709.png",
+    "Pasted image 20240713202053.png",
     "Tetrahedra/Variational tetrahedral meshing.md",
+    "Review/ASDF：Arbitrarily-detailed triangulating Signed Distance Functions.md",
+    "Review/Superpixel Segmentation Based on Translation Equivariant Seed and Iterative Boundary Movement.md",
+    "Review/Point Cloud Fitting Based on High-Accuracy Segmentation.md",
+    "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
+    "Tetrahedra/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
     "Tetrahedra/Dihedral angle-based maps of tetrahedral meshes.md",
     "Others/Provably good sampling and meshing of surfaces.md",
     "Others/Guaranteed-quality mesh generation for curved surfaces.md",
     "Tetrahedra/Convex decompositions of polyhedra.md",
-    "Review/Point Cloud Fitting Based on High-Accuracy Segmentation.md",
-    "Review/ASDF：Arbitrarily-detailed triangulating Signed Distance Functions.md",
-    "Pic/Pasted image 20240712113930.png",
-    "Review/Superpixel Segmentation Based on Translation Equivariant Seed and Iterative Boundary Movement.md",
     "Point Cloud Segmentation/HPNet：Deep Primitive Segmentation Using Hybrid Representations.md",
     "Point Cloud Segmentation",
-    "Pic/Pasted image 20240705172343.png",
     "Point Cloud Segmentation/Implicit Conversion of Manifold B-Rep Solids by Neural Halfspace Representation.md",
     "Point Cloud Segmentation/Surface and Edge Detection for Primitive Fitting of Point Clouds.md",
     "Point Cloud Segmentation/Parsenet：A parametric surface fitting network for 3d point clouds.md",
-    "Pic/Pasted image 20240711151711.png",
     "Others/Variational mesh segmentation via quadric surface fitting.md",
-    "Pic/Pasted image 20240711144115.png",
     "BRep/Efficient contact determination between solids with boundary representations (B-Rep).md",
     "Review",
     "BRep",
     "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
     "Mesh Operation/Bilateral mesh denoising.md",
     "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
-    "Pic/Pasted image 20240703225540.png",
     "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
-    "Pic/Pasted image 20240703231047.png",
     "Tetrahedra/Memory‑efficient Boundary‑preserving Tetrahedralization of Large  Three‑dimensional Meshes.md",
     "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
     "Tetrahedra/‘Ultimate’ robustness in meshing an arbitrary polyhedron.md",
-    "Pic/Pasted image 20240703230623.png",
-    "Pic/Pasted image 20240703225959.png",
-    "Pic/Pasted image 20240703225956.png",
     "Mesh Operation",
     "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
     "Mesh Reconstruction",
