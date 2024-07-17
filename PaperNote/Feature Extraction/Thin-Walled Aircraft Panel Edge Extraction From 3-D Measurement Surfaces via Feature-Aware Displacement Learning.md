@@ -1,0 +1,10 @@
+> @ARTICLE{10458949,
+  author={Chen, Mengqi and Zhou, Laishui and Chen, Honghua and Wang, Jun},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning}, 
+  year={2024},
+  volume={73},
+  number={},
+  pages={1-11},
+  keywords={Image edge detection;Feature extraction;Aircraft;Point cloud compression;Three-dimensional displays;Vectors;Learning systems;3-D measurement;edge extraction;feature-aware displacement learning;point cloud processing;thin-walled aircraft panel},
+  doi={10.1109/TIM.2024.3373087}}

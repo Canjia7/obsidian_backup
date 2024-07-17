@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f8398d7bd737cd11",
+        "id": "b590727317a84b25",
         "type": "tabs",
         "children": [
           {
-            "id": "05bf8af2885e6906",
+            "id": "63807a43786b7387",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
+                "file": "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 488.5,
-    "collapsed": true
+    "width": 488.5
   },
   "right": {
     "id": "4d3fd6fd70a08131",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
+                "file": "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
+                "file": "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md"
+                "file": "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md"
               }
             }
           }
@@ -147,24 +146,34 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "05bf8af2885e6906",
+  "active": "63807a43786b7387",
   "lastOpenFiles": [
-    "Pasted image 20240714193102.png",
-    "Pasted image 20240714193054.png",
-    "Pasted image 20240714165717.png",
-    "Pasted image 20240714165236.png",
-    "Pasted image 20240714152440.png",
-    "Pasted image 20240714152059.png",
-    "Pasted image 20240714140618.png",
-    "Pasted image 20240714132225.png",
-    "Pasted image 20240714130733.png",
-    "Pasted image 20240713203709.png",
-    "Pasted image 20240713202053.png",
+    "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
+    "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
+    "Pasted image 20240717223722.png",
+    "Pasted image 20240717222849.png",
+    "Pasted image 20240717222549.png",
+    "Pasted image 20240717222315.png",
+    "Pasted image 20240717222021.png",
+    "Pasted image 20240717220644.png",
+    "Pasted image 20240717220350.png",
+    "Pasted image 20240717220315.png",
+    "Pasted image 20240717220018.png",
+    "Pasted image 20240717215654.png",
+    "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
+    "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
+    "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
+    "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
+    "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
+    "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
+    "Mesh Reconstruction/RFEPS：Reconstructing Feature-line Equipped Polygonal Surface.md",
+    "Feature Extraction/L1-medial skeleton of point cloud.md",
+    "Feature Extraction",
+    "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
     "Tetrahedra/Variational tetrahedral meshing.md",
     "Review/ASDF：Arbitrarily-detailed triangulating Signed Distance Functions.md",
     "Review/Superpixel Segmentation Based on Translation Equivariant Seed and Iterative Boundary Movement.md",
     "Review/Point Cloud Fitting Based on High-Accuracy Segmentation.md",
-    "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
     "Tetrahedra/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
     "Tetrahedra/Dihedral angle-based maps of tetrahedral meshes.md",
     "Others/Provably good sampling and meshing of surfaces.md",
@@ -176,25 +185,14 @@
     "Point Cloud Segmentation/Surface and Edge Detection for Primitive Fitting of Point Clouds.md",
     "Point Cloud Segmentation/Parsenet：A parametric surface fitting network for 3d point clouds.md",
     "Others/Variational mesh segmentation via quadric surface fitting.md",
-    "BRep/Efficient contact determination between solids with boundary representations (B-Rep).md",
     "Review",
     "BRep",
-    "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
-    "Mesh Operation/Bilateral mesh denoising.md",
-    "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
-    "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
-    "Tetrahedra/Memory‑efficient Boundary‑preserving Tetrahedralization of Large  Three‑dimensional Meshes.md",
-    "Tetrahedra/An algorithm for tetrahedral mesh generation based on conforming constrained Delaunay tetrahedralization.md",
-    "Tetrahedra/‘Ultimate’ robustness in meshing an arbitrary polyhedron.md",
     "Mesh Operation",
-    "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
     "Mesh Reconstruction",
-    "Offset/A Parallel Feature-preserving Mesh Variable Offsetting Approach Based On Dynamic Programming.md",
     "Offset",
     "TCB-spline",
     "Others",
     "Pic",
-    "Tetrahedra",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
