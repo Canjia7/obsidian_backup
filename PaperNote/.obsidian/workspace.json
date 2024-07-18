@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
+                "file": "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "973f461eafbc90ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
+                "file": "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
+                "file": "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md"
+                "file": "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md"
               }
             }
           }
@@ -146,28 +159,29 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "63807a43786b7387",
+  "active": "973f461eafbc90ff",
   "lastOpenFiles": [
-    "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
-    "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
-    "Pasted image 20240717223722.png",
-    "Pasted image 20240717222849.png",
-    "Pasted image 20240717222549.png",
-    "Pasted image 20240717222315.png",
-    "Pasted image 20240717222021.png",
-    "Pasted image 20240717220644.png",
-    "Pasted image 20240717220350.png",
-    "Pasted image 20240717220315.png",
-    "Pasted image 20240717220018.png",
-    "Pasted image 20240717215654.png",
-    "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
     "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
-    "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
+    "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
     "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
-    "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
     "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
-    "Mesh Reconstruction/RFEPS：Reconstructing Feature-line Equipped Polygonal Surface.md",
+    "Pic/Pasted image 20240718145548.png",
+    "Pic/Pasted image 20240718194035.png",
+    "Pic/Pasted image 20240718193943.png",
+    "Pic/Pasted image 20240718193128.png",
+    "Pic/Pasted image 20240718193012.png",
+    "Pic/Pasted image 20240718192852.png",
+    "Pic/Pasted image 20240718192826.png",
+    "Pic/Pasted image 20240718192544.png",
+    "Pic/Pasted image 20240718191913.png",
+    "Pic/Pasted image 20240718190724.png",
+    "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
+    "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
+    "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
     "Feature Extraction/L1-medial skeleton of point cloud.md",
+    "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
+    "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
+    "Mesh Reconstruction/RFEPS：Reconstructing Feature-line Equipped Polygonal Surface.md",
     "Feature Extraction",
     "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
     "Tetrahedra/Variational tetrahedral meshing.md",

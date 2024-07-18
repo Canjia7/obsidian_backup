@@ -1,0 +1,10 @@
+> @ARTICLE{9406392,
+  author={Lv, Chenlei and Lin, Weisi and Zhao, Baoquan},
+  journal={IEEE Transactions on Multimedia}, 
+  title={Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud}, 
+  year={2022},
+  volume={24},
+  number={},
+  pages={1815-1829},
+  keywords={Three-dimensional displays;Optimization;Surface reconstruction;Image reconstruction;Noise reduction;Measurement;Reconstruction algorithms;Mesh reconstruction;intrinsic metric;voxel structure;isotropic property},
+  doi={10.1109/TMM.2021.3073265}}
