@@ -1,3 +1,10 @@
+---
+tags:
+  - point_cloud
+  - feature_point
+  - feature_extraction
+  - multiscale
+---
 > @article{LIU2023103592,
 title = {Robust and Accurate Feature Detection on Point Clouds},
 journal = {Computer-Aided Design},

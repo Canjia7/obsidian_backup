@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b590727317a84b25",
+        "id": "4324ce46b255c43b",
         "type": "tabs",
         "children": [
           {
-            "id": "63807a43786b7387",
+            "id": "04b3a4cab66b9f64",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "973f461eafbc90ff",
+            "id": "111135f009b898e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
+                "file": "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
+                "file": "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
+                "file": "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md"
+                "file": "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md"
               }
             }
           }
@@ -159,27 +159,28 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "973f461eafbc90ff",
+  "active": "111135f009b898e9",
   "lastOpenFiles": [
     "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
-    "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
+    "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
     "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
     "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
-    "Pic/Pasted image 20240718145548.png",
-    "Pic/Pasted image 20240718194035.png",
-    "Pic/Pasted image 20240718193943.png",
-    "Pic/Pasted image 20240718193128.png",
-    "Pic/Pasted image 20240718193012.png",
-    "Pic/Pasted image 20240718192852.png",
-    "Pic/Pasted image 20240718192826.png",
-    "Pic/Pasted image 20240718192544.png",
-    "Pic/Pasted image 20240718191913.png",
-    "Pic/Pasted image 20240718190724.png",
-    "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
-    "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
     "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
-    "Feature Extraction/L1-medial skeleton of point cloud.md",
+    "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
     "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
+    "Feature Extraction/L1-medial skeleton of point cloud.md",
+    "Pic/Pasted image 20240719191251.png",
+    "Pic/Pasted image 20240723180542.png",
+    "Pic/Pasted image 20240723174900.png",
+    "Pic/Pasted image 20240723173948.png",
+    "Pic/Pasted image 20240723173927.png",
+    "Pic/Pasted image 20240723173641.png",
+    "Pic/Pasted image 20240723164238.png",
+    "Pic/Pasted image 20240723150926.png",
+    "Pic/Pasted image 20240723150914.png",
+    "Pic/Pasted image 20240723114334.png",
+    "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
+    "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
     "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
     "Mesh Reconstruction/RFEPS：Reconstructing Feature-line Equipped Polygonal Surface.md",
     "Feature Extraction",
@@ -198,7 +199,6 @@
     "Point Cloud Segmentation/Implicit Conversion of Manifold B-Rep Solids by Neural Halfspace Representation.md",
     "Point Cloud Segmentation/Surface and Edge Detection for Primitive Fitting of Point Clouds.md",
     "Point Cloud Segmentation/Parsenet：A parametric surface fitting network for 3d point clouds.md",
-    "Others/Variational mesh segmentation via quadric surface fitting.md",
     "Review",
     "BRep",
     "Mesh Operation",

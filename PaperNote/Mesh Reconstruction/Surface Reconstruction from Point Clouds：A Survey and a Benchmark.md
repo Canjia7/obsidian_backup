@@ -1,0 +1,10 @@
+> @ARTICLE{10599623,
+  author={Huang, ZhangJin and Wen, Yuxin and Wang, ZiHao and Ren, Jinjuan and Jia, Kui},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Surface Reconstruction from Point Clouds: A Survey and a Benchmark}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-20},
+  keywords={Surface reconstruction;Benchmark testing;Point cloud compression;Image reconstruction;Reviews;Deep learning;Sensors;Surface reconstruction;surface modeling;point cloud;benchmarking dataset;literature survey;deep learning},
+  doi={10.1109/TPAMI.2024.3429209}}

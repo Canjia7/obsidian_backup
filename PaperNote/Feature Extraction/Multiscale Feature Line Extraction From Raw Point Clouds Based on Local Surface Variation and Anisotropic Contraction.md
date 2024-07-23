@@ -1,3 +1,10 @@
+---
+tags:
+  - point_cloud
+  - feature_line
+  - feature_extraction
+  - multiscale
+---
 > @ARTICLE{9351738,
   author={Chen, Honghua and Huang, Yaoran and Xie, Qian and Liu, Yuanpeng and Zhang, Yuan and Wei, Mingqiang and Wang, Jun},
   journal={IEEE Transactions on Automation Science and Engineering}, 
