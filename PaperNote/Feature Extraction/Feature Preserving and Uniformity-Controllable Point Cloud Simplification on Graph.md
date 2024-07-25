@@ -1,0 +1,10 @@
+> @INPROCEEDINGS{8784812,
+  author={Qi, Junkun and Hu, Wei and Guo, Zongming},
+  booktitle={2019 IEEE International Conference on Multimedia and Expo (ICME)}, 
+  title={Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={284-289},
+  keywords={Three-dimensional displays;Signal processing algorithms;Optimization;Laplace equations;Signal processing;Feature extraction;Sensors;Point cloud simplification;graph signal processing;feature preserving;uniformity-controllable},
+  doi={10.1109/ICME.2019.00057}}

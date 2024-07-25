@@ -1,0 +1,10 @@
+> @INPROCEEDINGS{5521460,
+  author={Weber, Christopher and Hahmann, Stefanie and Hagen, Hans},
+  booktitle={2010 Shape Modeling International Conference}, 
+  title={Sharp feature detection in point clouds}, 
+  year={2010},
+  volume={},
+  number={},
+  pages={175-186},
+  keywords={Computer vision;Clustering algorithms;Gaussian processes;Shape;Surface reconstruction;Feature extraction;Solid modeling;Three-dimensional displays;Sampling methods;unstructured point sets;feature detection;sharp features;Gauss map clustering},
+  doi={10.1109/SMI.2010.32}}

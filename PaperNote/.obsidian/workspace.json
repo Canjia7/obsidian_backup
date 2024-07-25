@@ -4,35 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "4324ce46b255c43b",
+        "id": "d55c362ba74b3c36",
         "type": "tabs",
         "children": [
           {
-            "id": "04b3a4cab66b9f64",
+            "id": "21d9f05ba08d56f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
+                "file": "Feature Extraction/Robust Smooth Feature Extraction from Point Clouds.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "111135f009b898e9",
+            "id": "1f6650ca88b59835",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
+                "file": "Feature Extraction/Sharp feature detection in point clouds.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af2ac0050415e29a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
+                "file": "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
+                "file": "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md"
+                "file": "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md"
               }
             }
           }
@@ -159,16 +171,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "111135f009b898e9",
+  "active": "af2ac0050415e29a",
   "lastOpenFiles": [
-    "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
-    "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
-    "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
+    "Feature Extraction/Sharp feature detection in point clouds.md",
+    "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
+    "Feature Extraction/Robust Smooth Feature Extraction from Point Clouds.md",
     "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
+    "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
+    "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
+    "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
+    "Feature Extraction/L1-medial skeleton of point cloud.md",
     "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
     "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
+    "BRep/Efficient contact determination between solids with boundary representations (B-Rep).md",
+    "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
+    "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
+    "Mesh Operation/Bilateral mesh denoising.md",
+    "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
     "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
-    "Feature Extraction/L1-medial skeleton of point cloud.md",
     "Pic/Pasted image 20240719191251.png",
     "Pic/Pasted image 20240723180542.png",
     "Pic/Pasted image 20240723174900.png",
@@ -179,7 +199,6 @@
     "Pic/Pasted image 20240723150926.png",
     "Pic/Pasted image 20240723150914.png",
     "Pic/Pasted image 20240723114334.png",
-    "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
     "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
     "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
     "Mesh Reconstruction/RFEPS：Reconstructing Feature-line Equipped Polygonal Surface.md",
@@ -191,14 +210,7 @@
     "Review/Point Cloud Fitting Based on High-Accuracy Segmentation.md",
     "Tetrahedra/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
     "Tetrahedra/Dihedral angle-based maps of tetrahedral meshes.md",
-    "Others/Provably good sampling and meshing of surfaces.md",
-    "Others/Guaranteed-quality mesh generation for curved surfaces.md",
-    "Tetrahedra/Convex decompositions of polyhedra.md",
-    "Point Cloud Segmentation/HPNet：Deep Primitive Segmentation Using Hybrid Representations.md",
     "Point Cloud Segmentation",
-    "Point Cloud Segmentation/Implicit Conversion of Manifold B-Rep Solids by Neural Halfspace Representation.md",
-    "Point Cloud Segmentation/Surface and Edge Detection for Primitive Fitting of Point Clouds.md",
-    "Point Cloud Segmentation/Parsenet：A parametric surface fitting network for 3d point clouds.md",
     "Review",
     "BRep",
     "Mesh Operation",
