@@ -4,47 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "d55c362ba74b3c36",
+        "id": "10b775d2137fd07a",
         "type": "tabs",
         "children": [
           {
-            "id": "21d9f05ba08d56f2",
+            "id": "4ff9ec52b29e2ff4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Feature Extraction/Robust Smooth Feature Extraction from Point Clouds.md",
+                "file": "Others/Variational mesh segmentation via quadric surface fitting.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1f6650ca88b59835",
+            "id": "d63d8c5daf8c5ca4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Feature Extraction/Sharp feature detection in point clouds.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "af2ac0050415e29a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
+                "file": "Others/Adaptive grid generation for discretizing implicit complexes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 488.5
+    "width": 488.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d3fd6fd70a08131",
@@ -110,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
+                "file": "Others/Adaptive grid generation for discretizing implicit complexes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
+                "file": "Others/Adaptive grid generation for discretizing implicit complexes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md"
+                "file": "Others/Adaptive grid generation for discretizing implicit complexes.md"
               }
             }
           }
@@ -171,45 +160,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "af2ac0050415e29a",
+  "active": "d63d8c5daf8c5ca4",
   "lastOpenFiles": [
-    "Feature Extraction/Sharp feature detection in point clouds.md",
-    "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
-    "Feature Extraction/Robust Smooth Feature Extraction from Point Clouds.md",
-    "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
-    "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
-    "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
+    "Pasted image 20240729200706.png",
+    "Pasted image 20240729184149.png",
+    "Pasted image 20240729171758.png",
+    "Others/Variational mesh segmentation via quadric surface fitting.md",
+    "Others/Adaptive grid generation for discretizing implicit complexes.md",
+    "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
+    "Others/Provably good sampling and meshing of surfaces.md",
+    "Others/Guaranteed-quality mesh generation for curved surfaces.md",
     "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
     "Feature Extraction/L1-medial skeleton of point cloud.md",
+    "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
     "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
     "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
+    "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
+    "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
+    "Feature Extraction/Sharp feature detection in point clouds.md",
+    "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
+    "Feature Extraction/Robust Smooth Feature Extraction from Point Clouds.md",
+    "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
+    "Pic/Pasted image 20240726200955.png",
+    "Pic/Pasted image 20240726195416.png",
+    "Pic/Pasted image 20240726184458.png",
+    "Pic/Pasted image 20240726172243.png",
+    "Pic/Pasted image 20240726145743.png",
+    "Pic/Pasted image 20240726145558.png",
     "BRep/Efficient contact determination between solids with boundary representations (B-Rep).md",
     "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
     "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
     "Mesh Operation/Bilateral mesh denoising.md",
     "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
-    "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
     "Pic/Pasted image 20240719191251.png",
     "Pic/Pasted image 20240723180542.png",
-    "Pic/Pasted image 20240723174900.png",
-    "Pic/Pasted image 20240723173948.png",
-    "Pic/Pasted image 20240723173927.png",
-    "Pic/Pasted image 20240723173641.png",
-    "Pic/Pasted image 20240723164238.png",
-    "Pic/Pasted image 20240723150926.png",
-    "Pic/Pasted image 20240723150914.png",
-    "Pic/Pasted image 20240723114334.png",
     "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
     "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
     "Mesh Reconstruction/RFEPS：Reconstructing Feature-line Equipped Polygonal Surface.md",
     "Feature Extraction",
     "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
-    "Tetrahedra/Variational tetrahedral meshing.md",
-    "Review/ASDF：Arbitrarily-detailed triangulating Signed Distance Functions.md",
-    "Review/Superpixel Segmentation Based on Translation Equivariant Seed and Iterative Boundary Movement.md",
-    "Review/Point Cloud Fitting Based on High-Accuracy Segmentation.md",
-    "Tetrahedra/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
-    "Tetrahedra/Dihedral angle-based maps of tetrahedral meshes.md",
     "Point Cloud Segmentation",
     "Review",
     "BRep",
