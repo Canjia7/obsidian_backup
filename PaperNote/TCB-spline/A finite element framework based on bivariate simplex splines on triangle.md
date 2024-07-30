@@ -51,7 +51,7 @@ link triangulation procedure（LTP）是一个递归算法，用于计算triangl
 
 为了方便解释LTP，我们首先介绍几个必要的术语
 
-我们用$\#X$来表示$X$的cardinality
+我们用$\#X$来表示$X$的==cardinality==
 
 给定一个在general position上的knots set $K\subset\mathbb{R}^2$
 一个$k$次的==triangle-configuration（t-config）==是一对knot subsets $(T,I)$，其中$T,I\subset K$， $\#T=3$且$\#I=k$

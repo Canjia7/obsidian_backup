@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4ff9ec52b29e2ff4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Others/Variational mesh segmentation via quadric surface fitting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d63d8c5daf8c5ca4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Others/Adaptive grid generation for discretizing implicit complexes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8f33d6fae143611d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 488.5,
-    "collapsed": true
+    "width": 488.5
   },
   "right": {
     "id": "4d3fd6fd70a08131",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/Adaptive grid generation for discretizing implicit complexes.md",
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/Adaptive grid generation for discretizing implicit complexes.md",
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/Adaptive grid generation for discretizing implicit complexes.md"
+                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md"
               }
             }
           }
@@ -160,13 +159,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d63d8c5daf8c5ca4",
+  "active": "8f33d6fae143611d",
   "lastOpenFiles": [
-    "Pasted image 20240729200706.png",
-    "Pasted image 20240729184149.png",
-    "Pasted image 20240729171758.png",
-    "Others/Variational mesh segmentation via quadric surface fitting.md",
+    "Pic/Pasted image 20240729171758.png",
     "Others/Adaptive grid generation for discretizing implicit complexes.md",
+    "Others/Variational mesh segmentation via quadric surface fitting.md",
+    "Pic/Pasted image 20240729200706.png",
+    "Pic/Pasted image 20240729184149.png",
     "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
     "Others/Provably good sampling and meshing of surfaces.md",
     "Others/Guaranteed-quality mesh generation for curved surfaces.md",
@@ -193,7 +192,6 @@
     "Mesh Operation/Bilateral mesh denoising.md",
     "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
     "Pic/Pasted image 20240719191251.png",
-    "Pic/Pasted image 20240723180542.png",
     "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
     "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
     "Mesh Reconstruction/RFEPS：Reconstructing Feature-line Equipped Polygonal Surface.md",
