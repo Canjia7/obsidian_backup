@@ -4,28 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "10b775d2137fd07a",
+        "id": "159f88266922d6b0",
         "type": "tabs",
         "children": [
           {
-            "id": "d63d8c5daf8c5ca4",
+            "id": "0740fc44acc8d5ea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Others/Adaptive grid generation for discretizing implicit complexes.md",
-                "mode": "source",
-                "source": false
+                "file": "Pic/Pasted image 20240802182348.png"
               }
             }
           },
           {
-            "id": "8f33d6fae143611d",
+            "id": "dc6e5af0f015ecf6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+                "file": "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#feature_extraction",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+                "file": "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+                "file": "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md"
+                "file": "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md"
               }
             }
           }
@@ -159,44 +157,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8f33d6fae143611d",
+  "active": "dc6e5af0f015ecf6",
   "lastOpenFiles": [
-    "Pic/Pasted image 20240729171758.png",
-    "Others/Adaptive grid generation for discretizing implicit complexes.md",
-    "Others/Variational mesh segmentation via quadric surface fitting.md",
-    "Pic/Pasted image 20240729200706.png",
-    "Pic/Pasted image 20240729184149.png",
-    "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
-    "Others/Provably good sampling and meshing of surfaces.md",
-    "Others/Guaranteed-quality mesh generation for curved surfaces.md",
+    "Pasted image 20240802201750.png",
+    "Pic/Pasted image 20240802182348.png",
+    "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
+    "Feature Extraction/Sharp feature detection in point clouds.md",
+    "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
     "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
     "Feature Extraction/L1-medial skeleton of point cloud.md",
-    "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
-    "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
     "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
     "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
     "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
-    "Feature Extraction/Sharp feature detection in point clouds.md",
     "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
     "Feature Extraction/Robust Smooth Feature Extraction from Point Clouds.md",
-    "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
-    "Pic/Pasted image 20240726200955.png",
-    "Pic/Pasted image 20240726195416.png",
-    "Pic/Pasted image 20240726184458.png",
-    "Pic/Pasted image 20240726172243.png",
-    "Pic/Pasted image 20240726145743.png",
-    "Pic/Pasted image 20240726145558.png",
+    "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
+    "Mesh Reconstruction/Surface reconstruction by computing restricted Voronoi cells in parallel.md",
+    "Pic/Pasted image 20240802105836.png",
+    "Pic/Pasted image 20240802112555.png",
+    "Pic/Pasted image 20240802112133.png",
+    "Pic/Pasted image 20240802111906.png",
+    "Pic/Pasted image 20240802111411.png",
+    "Pic/Pasted image 20240802110930.png",
+    "Pic/Pasted image 20240802110532.png",
+    "Pic/Pasted image 20240802110514.png",
+    "Mesh Reconstruction/A Watertight Surface Reconstruction Method for CAD Models Based on Optimal Transport.md",
+    "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
+    "Pic/Pasted image 20240801203207.png",
+    "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
+    "Others/Adaptive grid generation for discretizing implicit complexes.md",
+    "Others/Variational mesh segmentation via quadric surface fitting.md",
+    "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
+    "Others/Provably good sampling and meshing of surfaces.md",
+    "Others/Guaranteed-quality mesh generation for curved surfaces.md",
+    "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
     "BRep/Efficient contact determination between solids with boundary representations (B-Rep).md",
     "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
     "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
     "Mesh Operation/Bilateral mesh denoising.md",
-    "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
-    "Pic/Pasted image 20240719191251.png",
-    "Mesh Reconstruction/Voxel Structure-Based Mesh Reconstruction From a 3D Point Cloud.md",
-    "Mesh Reconstruction/Robust mesh reconstruction from unoriented noisy points.md",
-    "Mesh Reconstruction/RFEPS：Reconstructing Feature-line Equipped Polygonal Surface.md",
     "Feature Extraction",
-    "Tetrahedra/There are 174 subdivisions of the hexahedron into tetrahedra.md",
     "Point Cloud Segmentation",
     "Review",
     "BRep",

@@ -4,6 +4,7 @@ tags:
   - feature_point
   - feature_extraction
   - large_scale
+  - feature_detection
 ---
 ![[Pasted image 20240717223722.png]]
 > @article{XIN2024103728,

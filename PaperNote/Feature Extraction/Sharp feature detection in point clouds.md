@@ -1,8 +1,9 @@
 ---
 tags:
-  - feature_extraction
   - feature_point
   - point_cloud
+  - Gauss_map
+  - feature_detection
 ---
 > @INPROCEEDINGS{5521460,
   author={Weber, Christopher and Hahmann, Stefanie and Hagen, Hans},
@@ -112,7 +113,14 @@ clustering算法的一个重要的步骤是选择距离度量，它决定两个e
 ...
 #### Analysis
 所有只包含少量点的cluster都被丢弃，因为它们对应于有噪声的点
-剩下的聚类分析如下：...
+剩下的聚类分析如下：
+	sphere上相对的cluster被认为是一个cluster
+	如果最后仍保留有1个单独的cluster，我们认为当前point不属于feature
+	如果保留有2、3、4个clusters，我们认为该point属于一个sharp feature
+	如果保留多余4个clusters，我们认为当前point不属于一个feature
+		大多数数据集不会有四个sharp features相交于一点，见Figure 5例子
+		如果有必要，可以在特定数据集上进行调整
+		![[Pasted image 20240802182348.png]]
 # 4 Local-adaptive Method
 决定是否声明一个sample point为sharp point，取决于局部领域的大小（$k$）以及sensitivity参数（$\sigma$）
 ## 4.1 Size of neighborhood 

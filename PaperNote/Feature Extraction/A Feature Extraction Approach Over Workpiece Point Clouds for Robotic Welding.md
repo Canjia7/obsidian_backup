@@ -3,6 +3,7 @@ tags:
   - point_cloud
   - feature_extraction
   - feature_point
+  - feature_detection
 ---
 > @ARTICLE{10379030,
   author={Zhang, Yuankai and Geng, Yusen and Tian, Xincheng and Zheng, Fuquan and Jiang, Yong and Lai, Min},
