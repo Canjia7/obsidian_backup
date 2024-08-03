@@ -8,16 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0740fc44acc8d5ea",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pic/Pasted image 20240802182348.png"
-              }
-            }
-          },
-          {
             "id": "dc6e5af0f015ecf6",
             "type": "leaf",
             "state": {
@@ -28,9 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "46f49b1b17e393f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Offset/Point-Based Minkowski Sum Boundary.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b6a7e2d78e48c5f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
+                "file": "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
+                "file": "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md"
+                "file": "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md"
               }
             }
           }
@@ -157,11 +171,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "dc6e5af0f015ecf6",
+  "active": "b6a7e2d78e48c5f9",
   "lastOpenFiles": [
-    "Pasted image 20240802201750.png",
-    "Pic/Pasted image 20240802182348.png",
+    "Pasted image 20240803154941.png",
+    "Offset/Point-Based Minkowski Sum Boundary.md",
+    "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
+    "Pasted image 20240803135308.png",
+    "Pasted image 20240803133407.png",
+    "Pasted image 20240803133142.png",
+    "Pasted image 20240803130515.png",
     "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
+    "Pasted image 20240803115830.png",
+    "Pic/Pasted image 20240802182348.png",
+    "Pasted image 20240802201750.png",
     "Feature Extraction/Sharp feature detection in point clouds.md",
     "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
     "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
@@ -176,14 +198,8 @@
     "Pic/Pasted image 20240802105836.png",
     "Pic/Pasted image 20240802112555.png",
     "Pic/Pasted image 20240802112133.png",
-    "Pic/Pasted image 20240802111906.png",
-    "Pic/Pasted image 20240802111411.png",
-    "Pic/Pasted image 20240802110930.png",
-    "Pic/Pasted image 20240802110532.png",
-    "Pic/Pasted image 20240802110514.png",
     "Mesh Reconstruction/A Watertight Surface Reconstruction Method for CAD Models Based on Optimal Transport.md",
     "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
-    "Pic/Pasted image 20240801203207.png",
     "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
     "Others/Adaptive grid generation for discretizing implicit complexes.md",
     "Others/Variational mesh segmentation via quadric surface fitting.md",
@@ -193,8 +209,6 @@
     "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
     "BRep/Efficient contact determination between solids with boundary representations (B-Rep).md",
     "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
-    "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
-    "Mesh Operation/Bilateral mesh denoising.md",
     "Feature Extraction",
     "Point Cloud Segmentation",
     "Review",
