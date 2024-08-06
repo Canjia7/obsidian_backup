@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "159f88266922d6b0",
+        "id": "bb1275e855b7ddea",
         "type": "tabs",
         "children": [
           {
-            "id": "dc6e5af0f015ecf6",
+            "id": "b08801e38a4c540f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "46f49b1b17e393f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Offset/Point-Based Minkowski Sum Boundary.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b6a7e2d78e48c5f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
+                "file": "Bezier Guarding/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 488.5
+    "width": 488.5,
+    "collapsed": true
   },
   "right": {
     "id": "4d3fd6fd70a08131",
@@ -110,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
+                "file": "Bezier Guarding/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
+                "file": "Bezier Guarding/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md"
+                "file": "Bezier Guarding/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md"
               }
             }
           }
@@ -159,7 +135,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 280.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,44 +148,45 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b6a7e2d78e48c5f9",
+  "active": "b08801e38a4c540f",
   "lastOpenFiles": [
-    "Pasted image 20240803154941.png",
-    "Offset/Point-Based Minkowski Sum Boundary.md",
-    "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
-    "Pasted image 20240803135308.png",
-    "Pasted image 20240803133407.png",
-    "Pasted image 20240803133142.png",
-    "Pasted image 20240803130515.png",
-    "Others/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
-    "Pasted image 20240803115830.png",
-    "Pic/Pasted image 20240802182348.png",
-    "Pasted image 20240802201750.png",
-    "Feature Extraction/Sharp feature detection in point clouds.md",
-    "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
+    "Bezier Guarding/Bézier guarding：precise higher-order meshing of curved 2D domains.md",
+    "Bezier Guarding/3D Bézier Guarding：Boundary-Conforming Curved Tetrahedral Meshing.md",
+    "Bezier Guarding",
+    "Pasted image 20240806221035.png",
+    "Mesh Operation/CWF：Consolidating Weak Features in High-quality Mesh Simplification.md",
+    "Others/Adaptive grid generation for discretizing implicit complexes.md",
+    "Mesh Operation/Bilateral mesh denoising.md",
+    "Mesh Operation/Bilateral recovering of sharp edges on feature-insensitive sampled meshes.md",
+    "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
     "Feature Extraction/Multiscale Feature Line Extraction From Raw Point Clouds Based on Local Surface Variation and Anisotropic Contraction.md",
-    "Feature Extraction/L1-medial skeleton of point cloud.md",
-    "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
-    "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
+    "Feature Extraction/Sharp feature detection in point clouds.md",
+    "Review/ASDF：Arbitrarily-detailed triangulating Signed Distance Functions.md",
+    "Review/Superpixel Segmentation Based on Translation Equivariant Seed and Iterative Boundary Movement.md",
+    "Review/Point Cloud Fitting Based on High-Accuracy Segmentation.md",
+    "Feature Extraction/Robust Smooth Feature Extraction from Point Clouds.md",
     "Feature Extraction/Thin-Walled Aircraft Panel Edge Extraction From 3-D Measurement Surfaces via Feature-Aware Displacement Learning.md",
     "Feature Extraction/Sharp feature consolidation from raw 3D point clouds via displacement learning.md",
-    "Feature Extraction/Robust Smooth Feature Extraction from Point Clouds.md",
+    "Feature Extraction/L1-medial skeleton of point cloud.md",
+    "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
+    "Feature Extraction/A Feature Extraction Approach Over Workpiece Point Clouds for Robotic Welding.md",
+    "Feature Extraction/Accurate and complete line segment extraction for large-scale point clouds.md",
+    "Mesh Reconstruction/Poisson surface reconstruction.md",
+    "Pic/Pasted image 20240802201750.png",
+    "Offset/Point-Based Minkowski Sum Boundary.md",
+    "Offset/A Simple Method for Computing Minkowski Sum Boundary in 3D Using Collision Detection.md",
+    "Pic/Pasted image 20240803154941.png",
+    "Pic/Pasted image 20240803135308.png",
+    "Pic/Pasted image 20240803133407.png",
+    "Pic/Pasted image 20240803133142.png",
+    "Pic/Pasted image 20240803130515.png",
+    "Pic/Pasted image 20240803115830.png",
+    "Pic/Pasted image 20240802182348.png",
+    "Feature Extraction/Robust and Accurate Feature Detection on Point Clouds.md",
     "Feature Extraction/Extracting 3-D structural lines of building from ALS point clouds using graph neural network embedded with corner information.md",
     "Mesh Reconstruction/Surface reconstruction by computing restricted Voronoi cells in parallel.md",
     "Pic/Pasted image 20240802105836.png",
-    "Pic/Pasted image 20240802112555.png",
-    "Pic/Pasted image 20240802112133.png",
     "Mesh Reconstruction/A Watertight Surface Reconstruction Method for CAD Models Based on Optimal Transport.md",
-    "Mesh Reconstruction/Surface Reconstruction from Point Clouds：A Survey and a Benchmark.md",
-    "TCB-spline/A finite element framework based on bivariate simplex splines on triangle.md",
-    "Others/Adaptive grid generation for discretizing implicit complexes.md",
-    "Others/Variational mesh segmentation via quadric surface fitting.md",
-    "Others/Robust Inside-outside Segmentation Using Generalized Winding Numbers.md",
-    "Others/Provably good sampling and meshing of surfaces.md",
-    "Others/Guaranteed-quality mesh generation for curved surfaces.md",
-    "Feature Extraction/Feature Preserving and Uniformity-Controllable Point Cloud Simplification on Graph.md",
-    "BRep/Efficient contact determination between solids with boundary representations (B-Rep).md",
-    "Mesh Operation/Non-iterative, feature-preserving mesh smoothing.md",
     "Feature Extraction",
     "Point Cloud Segmentation",
     "Review",
@@ -218,7 +196,6 @@
     "Offset",
     "TCB-spline",
     "Others",
-    "Pic",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
